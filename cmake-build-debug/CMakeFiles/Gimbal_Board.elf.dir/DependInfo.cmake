@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 set(CMAKE_DEPENDS_LANGUAGES
   "ASM"
   "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
@@ -34,6 +35,9 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
   "../Drivers/CMSIS/Device/ST/STM32F4xx/Include"
   "../Drivers/CMSIS/Include"
+  "../Application"
+  "../module"
+  "../hardware"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/worker/CLionProjects/Gimbal_Board/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
@@ -124,6 +128,52 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
   "../Drivers/CMSIS/Device/ST/STM32F4xx/Include"
   "../Drivers/CMSIS/Include"
+  "../Application"
+  "../module"
+  "../hardware"
+  )
+set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/worker/CLionProjects/Gimbal_Board/Application/CAN_receive.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/Application/System_Config.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/Application/gimbal_task.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_usart.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/buzzer.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/led.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/module/M_Gimbal.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/module/first_order_filter.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/module/motor_3508.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/module/motor_6020.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/module/motor_measure.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/module/pid.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/module/remote_control.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.obj"
+  "C:/Users/worker/CLionProjects/Gimbal_Board/module/user_lib.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.obj"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "ARM_MATH_CM4"
+  "ARM_MATH_MATRIX_CHECK"
+  "ARM_MATH_ROUNDING"
+  "STM32F407xx"
+  "USE_HAL_DRIVER"
+  )
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../Inc"
+  "../Drivers/STM32F4xx_HAL_Driver/Inc"
+  "../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+  "../Middlewares/Third_Party/FreeRTOS/Source/include"
+  "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS"
+  "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"
+  "../Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+  "../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
+  "../Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+  "../Drivers/CMSIS/Include"
+  "../Application"
+  "../module"
+  "../hardware"
   )
 
 # The set of dependency files which are needed:

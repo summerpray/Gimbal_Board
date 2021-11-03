@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration name="OCD Gimbal_Board" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Gimbal_Board" TARGET_NAME="Gimbal_Board.elf" version="1" RUN_TARGET_PROJECT_NAME="Gimbal_Board" RUN_TARGET_NAME="Gimbal_Board.elf">
-    <openocd version="1" gdb-port="3333" telnet-port="4444" reset-type="INIT" download-type="UPDATED_ONLY">
+  <configuration default="false" name="OCD Gimbal_Board" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Gimbal_Board" TARGET_NAME="Gimbal_Board.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="Gimbal_Board" RUN_TARGET_NAME="Gimbal_Board.elf">
+    <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="C:\Users\worker\CLionProjects\Gimbal_Board\cmsis-dap.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
       <debugger kind="GDB" isBundled="true" />
     </openocd>
     <method v="2">

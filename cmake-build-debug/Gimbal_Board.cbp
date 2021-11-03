@@ -39,6 +39,9 @@
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/Application"/>
+					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/module"/>
+					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/hardware"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward"/>
@@ -75,6 +78,9 @@
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/Application"/>
+					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/module"/>
+					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/hardware"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward"/>
@@ -110,6 +116,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/CAN_receive.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/CAN_receive.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/System_Config.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/System_Config.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/gimbal_task.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/gimbal_task.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
@@ -543,6 +567,72 @@
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Src/usbd_desc.c">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_usart.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_usart.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/buzzer.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/buzzer.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/led.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/led.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/M_Gimbal.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/M_Gimbal.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/first_order_filter.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/first_order_filter.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/motor_3508.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/motor_3508.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/motor_6020.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/motor_6020.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/motor_measure.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/motor_measure.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/pid.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/pid.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/remote_control.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/remote_control.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/user_lib.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/user_lib.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/startup/startup_stm32f407xx.s">

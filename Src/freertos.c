@@ -20,10 +20,9 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "FreeRTOS.h"
-#include "task.h"
 #include "main.h"
 #include "cmsis_os.h"
-
+#include "System_Config.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -46,16 +45,17 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-
+osThreadId startTaskHandle;
+osThreadId gimbalTaskHandle;
 /* USER CODE END Variables */
-osThreadId testHandle;
+
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
 
 /* USER CODE END FunctionPrototypes */
 
-void test_task(void const * argument);
+void start_task(void const * argument);
 
 extern void MX_USB_DEVICE_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -120,39 +120,42 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of test */
-  osThreadDef(test, test_task, osPriorityNormal, 0, 128);
-  testHandle = osThreadCreate(osThread(test), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
+  osThreadDef(startTask, start_task, osPriorityNormal, 0, 128);
+  startTaskHandle = osThreadCreate(osThread(startTask), NULL);
+
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
 
 }
 
-/* USER CODE BEGIN Header_test_task */
+/* USER CODE BEGIN Header_start_task */
+
+/* USER CODE END Header_test_task */
+
+
+/* Private application code --------------------------------------------------*/
+/* USER CODE BEGIN Application */
 /**
   * @brief  Function implementing the test thread.
   * @param  argument: Not used
   * @retval None
   */
-/* USER CODE END Header_test_task */
-__weak void test_task(void const * argument)
+__weak void start_task(void const * argument)
 {
-  /* init code for USB_DEVICE */
-  MX_USB_DEVICE_Init();
+    /* init code for USB_DEVICE */
 
-  /* USER CODE BEGIN test_task */
-  /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
-  /* USER CODE END test_task */
+    /* USER CODE BEGIN test_task */
+    /* Infinite loop */
+    for (;;) {
+        Task_init();
+        Task_start();
+        /* Delete the default task. */
+        osThreadTerminate(startTaskHandle);
+    }
+    /* USER CODE END test_task */
 }
-
-/* Private application code --------------------------------------------------*/
-/* USER CODE BEGIN Application */
-
 /* USER CODE END Application */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

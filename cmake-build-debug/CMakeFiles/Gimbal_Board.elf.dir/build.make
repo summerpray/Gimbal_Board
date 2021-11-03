@@ -65,9 +65,48 @@ include CMakeFiles/Gimbal_Board.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Gimbal_Board.elf.dir/flags.make
 
+CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.obj: ../Application/CAN_receive.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Application\CAN_receive.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Application\CAN_receive.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\Application\CAN_receive.cpp > CMakeFiles\Gimbal_Board.elf.dir\Application\CAN_receive.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\Application\CAN_receive.cpp -o CMakeFiles\Gimbal_Board.elf.dir\Application\CAN_receive.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.obj: ../Application/System_Config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Application\System_Config.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Application\System_Config.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\Application\System_Config.cpp > CMakeFiles\Gimbal_Board.elf.dir\Application\System_Config.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\Application\System_Config.cpp -o CMakeFiles\Gimbal_Board.elf.dir\Application\System_Config.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.obj: ../Application/gimbal_task.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Application\gimbal_task.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Application\gimbal_task.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\Application\gimbal_task.cpp > CMakeFiles\Gimbal_Board.elf.dir\Application\gimbal_task.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\Application\gimbal_task.cpp -o CMakeFiles\Gimbal_Board.elf.dir\Application\gimbal_task.cpp.s
+
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i: cmake_force
@@ -80,7 +119,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.i: cmake_force
@@ -93,7 +132,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_a
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.i: cmake_force
@@ -106,7 +145,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_a
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i: cmake_force
@@ -119,7 +158,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i: cmake_force
@@ -132,7 +171,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_crc.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c.i: cmake_force
@@ -145,7 +184,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i: cmake_force
@@ -158,7 +197,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_d
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i: cmake_force
@@ -171,7 +210,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_d
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i: cmake_force
@@ -184,7 +223,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_e
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i: cmake_force
@@ -197,7 +236,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_f
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i: cmake_force
@@ -210,7 +249,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_f
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i: cmake_force
@@ -223,7 +262,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_f
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i: cmake_force
@@ -236,7 +275,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_g
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i: cmake_force
@@ -249,7 +288,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i: cmake_force
@@ -262,7 +301,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.i: cmake_force
@@ -275,7 +314,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_p
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd_ex.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd_ex.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.i: cmake_force
@@ -288,7 +327,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_p
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i: cmake_force
@@ -301,7 +340,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_p
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i: cmake_force
@@ -314,7 +353,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_p
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i: cmake_force
@@ -327,7 +366,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_r
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i: cmake_force
@@ -340,7 +379,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_r
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rng.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rng.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c.i: cmake_force
@@ -353,7 +392,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_r
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.i: cmake_force
@@ -366,7 +405,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_r
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc_ex.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc_ex.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.i: cmake_force
@@ -379,7 +418,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_r
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i: cmake_force
@@ -392,7 +431,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_s
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i: cmake_force
@@ -405,7 +444,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_t
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i: cmake_force
@@ -418,7 +457,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_t
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i: cmake_force
@@ -431,7 +470,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_u
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.i: cmake_force
@@ -444,7 +483,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_us
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj: ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.i: cmake_force
@@ -457,7 +496,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CD
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.i: cmake_force
@@ -470,7 +509,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.i: cmake_force
@@ -483,7 +522,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj: ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.i: cmake_force
@@ -496,7 +535,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i: cmake_force
@@ -509,7 +548,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RT
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\Third_Party\FreeRTOS\Source\croutine.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i: cmake_force
@@ -522,7 +561,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i: cmake_force
@@ -535,7 +574,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_gr
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\Third_Party\FreeRTOS\Source\list.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i: cmake_force
@@ -548,7 +587,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.s
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i: cmake_force
@@ -561,7 +600,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
@@ -574,7 +613,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\Third_Party\FreeRTOS\Source\queue.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i: cmake_force
@@ -587,7 +626,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i: cmake_force
@@ -600,7 +639,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_b
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\Third_Party\FreeRTOS\Source\tasks.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i: cmake_force
@@ -613,7 +652,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: ../Middlewares/Third_Party/FreeRTOS/Source/timers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Middlewares\Third_Party\FreeRTOS\Source\timers.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i: cmake_force
@@ -626,7 +665,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/adc.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/adc.c.obj: ../Src/adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/adc.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\adc.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\adc.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/adc.c.i: cmake_force
@@ -639,7 +678,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/adc.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/can.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/can.c.obj: ../Src/can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/can.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\can.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\can.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/can.c.i: cmake_force
@@ -652,7 +691,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/can.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/crc.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/crc.c.obj: ../Src/crc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/crc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/crc.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\crc.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\crc.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/crc.c.i: cmake_force
@@ -665,7 +704,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/crc.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/dma.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/dma.c.obj: ../Src/dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/dma.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\dma.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\dma.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/dma.c.i: cmake_force
@@ -678,7 +717,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/dma.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/freertos.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/freertos.c.obj: ../Src/freertos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/freertos.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/freertos.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\freertos.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\freertos.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/freertos.c.i: cmake_force
@@ -691,7 +730,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/freertos.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/gpio.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/gpio.c.obj: ../Src/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/gpio.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\gpio.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\gpio.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/gpio.c.i: cmake_force
@@ -704,7 +743,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/gpio.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/i2c.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/i2c.c.obj: ../Src/i2c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/i2c.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\i2c.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\i2c.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/i2c.c.i: cmake_force
@@ -717,7 +756,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/i2c.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/main.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/main.c.obj: ../Src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/main.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\main.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\main.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/main.c.i: cmake_force
@@ -730,7 +769,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/main.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/rng.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/rng.c.obj: ../Src/rng.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/rng.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/rng.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\rng.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\rng.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/rng.c.i: cmake_force
@@ -743,7 +782,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/rng.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/rtc.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/rtc.c.obj: ../Src/rtc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/rtc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/rtc.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\rtc.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\rtc.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/rtc.c.i: cmake_force
@@ -756,7 +795,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/rtc.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/spi.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/spi.c.obj: ../Src/spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/spi.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\spi.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\spi.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/spi.c.i: cmake_force
@@ -769,7 +808,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/spi.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_hal_msp.c.obj: ../Src/stm32f4xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_hal_msp.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\stm32f4xx_hal_msp.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\stm32f4xx_hal_msp.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_hal_msp.c.i: cmake_force
@@ -782,7 +821,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_hal_msp.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_it.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_it.c.obj: ../Src/stm32f4xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_it.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\stm32f4xx_it.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\stm32f4xx_it.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_it.c.i: cmake_force
@@ -795,7 +834,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/stm32f4xx_it.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/syscalls.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/syscalls.c.obj: ../Src/syscalls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/syscalls.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\syscalls.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\syscalls.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/syscalls.c.i: cmake_force
@@ -808,7 +847,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/system_stm32f4xx.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/system_stm32f4xx.c.obj: ../Src/system_stm32f4xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/system_stm32f4xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/system_stm32f4xx.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\system_stm32f4xx.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\system_stm32f4xx.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/system_stm32f4xx.c.i: cmake_force
@@ -821,7 +860,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/system_stm32f4xx.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/tim.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/tim.c.obj: ../Src/tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/tim.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\tim.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\tim.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/tim.c.i: cmake_force
@@ -834,7 +873,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/tim.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/usart.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/usart.c.obj: ../Src/usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/usart.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\usart.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\usart.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/usart.c.i: cmake_force
@@ -847,7 +886,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/usart.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/usb_device.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/usb_device.c.obj: ../Src/usb_device.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/usb_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/usb_device.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\usb_device.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\usb_device.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/usb_device.c.i: cmake_force
@@ -860,7 +899,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/usb_device.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_cdc_if.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_cdc_if.c.obj: ../Src/usbd_cdc_if.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_cdc_if.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_cdc_if.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\usbd_cdc_if.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\usbd_cdc_if.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_cdc_if.c.i: cmake_force
@@ -873,7 +912,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_cdc_if.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_conf.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_conf.c.obj: ../Src/usbd_conf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_conf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_conf.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\usbd_conf.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\usbd_conf.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_conf.c.i: cmake_force
@@ -886,7 +925,7 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_conf.c.s: cmake_force
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.obj: ../Src/usbd_desc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\Src\usbd_desc.c.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\Src\usbd_desc.c
 
 CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.i: cmake_force
@@ -897,9 +936,152 @@ CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.s"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\Src\usbd_desc.c -o CMakeFiles\Gimbal_Board.elf.dir\Src\usbd_desc.c.s
 
+CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.obj: ../hardware/bsp_usart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\hardware\bsp_usart.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\hardware\bsp_usart.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\hardware\bsp_usart.cpp > CMakeFiles\Gimbal_Board.elf.dir\hardware\bsp_usart.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\hardware\bsp_usart.cpp -o CMakeFiles\Gimbal_Board.elf.dir\hardware\bsp_usart.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.obj: ../hardware/buzzer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\hardware\buzzer.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\hardware\buzzer.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\hardware\buzzer.cpp > CMakeFiles\Gimbal_Board.elf.dir\hardware\buzzer.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\hardware\buzzer.cpp -o CMakeFiles\Gimbal_Board.elf.dir\hardware\buzzer.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.obj: ../hardware/led.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\hardware\led.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\hardware\led.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\hardware\led.cpp > CMakeFiles\Gimbal_Board.elf.dir\hardware\led.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\hardware\led.cpp -o CMakeFiles\Gimbal_Board.elf.dir\hardware\led.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.obj: ../module/M_Gimbal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\module\M_Gimbal.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\module\M_Gimbal.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\module\M_Gimbal.cpp > CMakeFiles\Gimbal_Board.elf.dir\module\M_Gimbal.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\module\M_Gimbal.cpp -o CMakeFiles\Gimbal_Board.elf.dir\module\M_Gimbal.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.obj: ../module/first_order_filter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\module\first_order_filter.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\module\first_order_filter.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\module\first_order_filter.cpp > CMakeFiles\Gimbal_Board.elf.dir\module\first_order_filter.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\module\first_order_filter.cpp -o CMakeFiles\Gimbal_Board.elf.dir\module\first_order_filter.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.obj: ../module/motor_3508.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\module\motor_3508.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\module\motor_3508.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\module\motor_3508.cpp > CMakeFiles\Gimbal_Board.elf.dir\module\motor_3508.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\module\motor_3508.cpp -o CMakeFiles\Gimbal_Board.elf.dir\module\motor_3508.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.obj: ../module/motor_6020.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\module\motor_6020.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\module\motor_6020.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\module\motor_6020.cpp > CMakeFiles\Gimbal_Board.elf.dir\module\motor_6020.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\module\motor_6020.cpp -o CMakeFiles\Gimbal_Board.elf.dir\module\motor_6020.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.obj: ../module/motor_measure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\module\motor_measure.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\module\motor_measure.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\module\motor_measure.cpp > CMakeFiles\Gimbal_Board.elf.dir\module\motor_measure.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\module\motor_measure.cpp -o CMakeFiles\Gimbal_Board.elf.dir\module\motor_measure.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.obj: ../module/pid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\module\pid.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\module\pid.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\module\pid.cpp > CMakeFiles\Gimbal_Board.elf.dir\module\pid.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\module\pid.cpp -o CMakeFiles\Gimbal_Board.elf.dir\module\pid.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.obj: ../module/remote_control.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\module\remote_control.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\module\remote_control.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\module\remote_control.cpp > CMakeFiles\Gimbal_Board.elf.dir\module\remote_control.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\module\remote_control.cpp -o CMakeFiles\Gimbal_Board.elf.dir\module\remote_control.cpp.s
+
+CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
+CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.obj: ../module/user_lib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.obj"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\module\user_lib.cpp.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\module\user_lib.cpp
+
+CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.i"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\worker\CLionProjects\Gimbal_Board\module\user_lib.cpp > CMakeFiles\Gimbal_Board.elf.dir\module\user_lib.cpp.i
+
+CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.s"
+	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\worker\CLionProjects\Gimbal_Board\module\user_lib.cpp -o CMakeFiles\Gimbal_Board.elf.dir\module\user_lib.cpp.s
+
 CMakeFiles/Gimbal_Board.elf.dir/startup/startup_stm32f407xx.s.obj: CMakeFiles/Gimbal_Board.elf.dir/flags.make
 CMakeFiles/Gimbal_Board.elf.dir/startup/startup_stm32f407xx.s.obj: ../startup/startup_stm32f407xx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building ASM object CMakeFiles/Gimbal_Board.elf.dir/startup/startup_stm32f407xx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building ASM object CMakeFiles/Gimbal_Board.elf.dir/startup/startup_stm32f407xx.s.obj"
 	E:\cubeMX\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\Gimbal_Board.elf.dir\startup\startup_stm32f407xx.s.obj -c C:\Users\worker\CLionProjects\Gimbal_Board\startup\startup_stm32f407xx.s
 
 CMakeFiles/Gimbal_Board.elf.dir/startup/startup_stm32f407xx.s.i: cmake_force
@@ -912,6 +1094,9 @@ CMakeFiles/Gimbal_Board.elf.dir/startup/startup_stm32f407xx.s.s: cmake_force
 
 # Object files for target Gimbal_Board.elf
 Gimbal_Board_elf_OBJECTS = \
+"CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.obj" \
 "CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" \
 "CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj" \
 "CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj" \
@@ -976,11 +1161,25 @@ Gimbal_Board_elf_OBJECTS = \
 "CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_cdc_if.c.obj" \
 "CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_conf.c.obj" \
 "CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.obj" \
+"CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.obj" \
 "CMakeFiles/Gimbal_Board.elf.dir/startup/startup_stm32f407xx.s.obj"
 
 # External object files for target Gimbal_Board.elf
 Gimbal_Board_elf_EXTERNAL_OBJECTS =
 
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.obj
 Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
 Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
 Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
@@ -1045,11 +1244,22 @@ Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/Src/usb_device.c.obj
 Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_cdc_if.c.obj
 Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_conf.c.obj
 Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.obj
+Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.obj
 Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/startup/startup_stm32f407xx.s.obj
 Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/build.make
 Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/objects1.rsp
 Gimbal_Board.elf: CMakeFiles/Gimbal_Board.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Linking C executable Gimbal_Board.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\worker\CLionProjects\Gimbal_Board\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Linking CXX executable Gimbal_Board.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Gimbal_Board.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/Gimbal_Board.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/Gimbal_Board.bin"

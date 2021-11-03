@@ -128,6 +128,78 @@ Gimbal_Board.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/build
 .PHONY : Gimbal_Board.elf/fast
 
+Application/CAN_receive.obj: Application/CAN_receive.cpp.obj
+.PHONY : Application/CAN_receive.obj
+
+# target to build an object file
+Application/CAN_receive.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.obj
+.PHONY : Application/CAN_receive.cpp.obj
+
+Application/CAN_receive.i: Application/CAN_receive.cpp.i
+.PHONY : Application/CAN_receive.i
+
+# target to preprocess a source file
+Application/CAN_receive.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.i
+.PHONY : Application/CAN_receive.cpp.i
+
+Application/CAN_receive.s: Application/CAN_receive.cpp.s
+.PHONY : Application/CAN_receive.s
+
+# target to generate assembly for a file
+Application/CAN_receive.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.s
+.PHONY : Application/CAN_receive.cpp.s
+
+Application/System_Config.obj: Application/System_Config.cpp.obj
+.PHONY : Application/System_Config.obj
+
+# target to build an object file
+Application/System_Config.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.obj
+.PHONY : Application/System_Config.cpp.obj
+
+Application/System_Config.i: Application/System_Config.cpp.i
+.PHONY : Application/System_Config.i
+
+# target to preprocess a source file
+Application/System_Config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.i
+.PHONY : Application/System_Config.cpp.i
+
+Application/System_Config.s: Application/System_Config.cpp.s
+.PHONY : Application/System_Config.s
+
+# target to generate assembly for a file
+Application/System_Config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.s
+.PHONY : Application/System_Config.cpp.s
+
+Application/gimbal_task.obj: Application/gimbal_task.cpp.obj
+.PHONY : Application/gimbal_task.obj
+
+# target to build an object file
+Application/gimbal_task.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.obj
+.PHONY : Application/gimbal_task.cpp.obj
+
+Application/gimbal_task.i: Application/gimbal_task.cpp.i
+.PHONY : Application/gimbal_task.i
+
+# target to preprocess a source file
+Application/gimbal_task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.i
+.PHONY : Application/gimbal_task.cpp.i
+
+Application/gimbal_task.s: Application/gimbal_task.cpp.s
+.PHONY : Application/gimbal_task.s
+
+# target to generate assembly for a file
+Application/gimbal_task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.s
+.PHONY : Application/gimbal_task.cpp.s
+
 Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.obj
 
@@ -1664,6 +1736,270 @@ Src/usbd_desc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.s
 .PHONY : Src/usbd_desc.c.s
 
+hardware/bsp_usart.obj: hardware/bsp_usart.cpp.obj
+.PHONY : hardware/bsp_usart.obj
+
+# target to build an object file
+hardware/bsp_usart.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.obj
+.PHONY : hardware/bsp_usart.cpp.obj
+
+hardware/bsp_usart.i: hardware/bsp_usart.cpp.i
+.PHONY : hardware/bsp_usart.i
+
+# target to preprocess a source file
+hardware/bsp_usart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.i
+.PHONY : hardware/bsp_usart.cpp.i
+
+hardware/bsp_usart.s: hardware/bsp_usart.cpp.s
+.PHONY : hardware/bsp_usart.s
+
+# target to generate assembly for a file
+hardware/bsp_usart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.s
+.PHONY : hardware/bsp_usart.cpp.s
+
+hardware/buzzer.obj: hardware/buzzer.cpp.obj
+.PHONY : hardware/buzzer.obj
+
+# target to build an object file
+hardware/buzzer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.obj
+.PHONY : hardware/buzzer.cpp.obj
+
+hardware/buzzer.i: hardware/buzzer.cpp.i
+.PHONY : hardware/buzzer.i
+
+# target to preprocess a source file
+hardware/buzzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.i
+.PHONY : hardware/buzzer.cpp.i
+
+hardware/buzzer.s: hardware/buzzer.cpp.s
+.PHONY : hardware/buzzer.s
+
+# target to generate assembly for a file
+hardware/buzzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.s
+.PHONY : hardware/buzzer.cpp.s
+
+hardware/led.obj: hardware/led.cpp.obj
+.PHONY : hardware/led.obj
+
+# target to build an object file
+hardware/led.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.obj
+.PHONY : hardware/led.cpp.obj
+
+hardware/led.i: hardware/led.cpp.i
+.PHONY : hardware/led.i
+
+# target to preprocess a source file
+hardware/led.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.i
+.PHONY : hardware/led.cpp.i
+
+hardware/led.s: hardware/led.cpp.s
+.PHONY : hardware/led.s
+
+# target to generate assembly for a file
+hardware/led.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.s
+.PHONY : hardware/led.cpp.s
+
+module/M_Gimbal.obj: module/M_Gimbal.cpp.obj
+.PHONY : module/M_Gimbal.obj
+
+# target to build an object file
+module/M_Gimbal.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.obj
+.PHONY : module/M_Gimbal.cpp.obj
+
+module/M_Gimbal.i: module/M_Gimbal.cpp.i
+.PHONY : module/M_Gimbal.i
+
+# target to preprocess a source file
+module/M_Gimbal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.i
+.PHONY : module/M_Gimbal.cpp.i
+
+module/M_Gimbal.s: module/M_Gimbal.cpp.s
+.PHONY : module/M_Gimbal.s
+
+# target to generate assembly for a file
+module/M_Gimbal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.s
+.PHONY : module/M_Gimbal.cpp.s
+
+module/first_order_filter.obj: module/first_order_filter.cpp.obj
+.PHONY : module/first_order_filter.obj
+
+# target to build an object file
+module/first_order_filter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.obj
+.PHONY : module/first_order_filter.cpp.obj
+
+module/first_order_filter.i: module/first_order_filter.cpp.i
+.PHONY : module/first_order_filter.i
+
+# target to preprocess a source file
+module/first_order_filter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.i
+.PHONY : module/first_order_filter.cpp.i
+
+module/first_order_filter.s: module/first_order_filter.cpp.s
+.PHONY : module/first_order_filter.s
+
+# target to generate assembly for a file
+module/first_order_filter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.s
+.PHONY : module/first_order_filter.cpp.s
+
+module/motor_3508.obj: module/motor_3508.cpp.obj
+.PHONY : module/motor_3508.obj
+
+# target to build an object file
+module/motor_3508.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.obj
+.PHONY : module/motor_3508.cpp.obj
+
+module/motor_3508.i: module/motor_3508.cpp.i
+.PHONY : module/motor_3508.i
+
+# target to preprocess a source file
+module/motor_3508.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.i
+.PHONY : module/motor_3508.cpp.i
+
+module/motor_3508.s: module/motor_3508.cpp.s
+.PHONY : module/motor_3508.s
+
+# target to generate assembly for a file
+module/motor_3508.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.s
+.PHONY : module/motor_3508.cpp.s
+
+module/motor_6020.obj: module/motor_6020.cpp.obj
+.PHONY : module/motor_6020.obj
+
+# target to build an object file
+module/motor_6020.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.obj
+.PHONY : module/motor_6020.cpp.obj
+
+module/motor_6020.i: module/motor_6020.cpp.i
+.PHONY : module/motor_6020.i
+
+# target to preprocess a source file
+module/motor_6020.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.i
+.PHONY : module/motor_6020.cpp.i
+
+module/motor_6020.s: module/motor_6020.cpp.s
+.PHONY : module/motor_6020.s
+
+# target to generate assembly for a file
+module/motor_6020.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.s
+.PHONY : module/motor_6020.cpp.s
+
+module/motor_measure.obj: module/motor_measure.cpp.obj
+.PHONY : module/motor_measure.obj
+
+# target to build an object file
+module/motor_measure.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.obj
+.PHONY : module/motor_measure.cpp.obj
+
+module/motor_measure.i: module/motor_measure.cpp.i
+.PHONY : module/motor_measure.i
+
+# target to preprocess a source file
+module/motor_measure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.i
+.PHONY : module/motor_measure.cpp.i
+
+module/motor_measure.s: module/motor_measure.cpp.s
+.PHONY : module/motor_measure.s
+
+# target to generate assembly for a file
+module/motor_measure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.s
+.PHONY : module/motor_measure.cpp.s
+
+module/pid.obj: module/pid.cpp.obj
+.PHONY : module/pid.obj
+
+# target to build an object file
+module/pid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.obj
+.PHONY : module/pid.cpp.obj
+
+module/pid.i: module/pid.cpp.i
+.PHONY : module/pid.i
+
+# target to preprocess a source file
+module/pid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.i
+.PHONY : module/pid.cpp.i
+
+module/pid.s: module/pid.cpp.s
+.PHONY : module/pid.s
+
+# target to generate assembly for a file
+module/pid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.s
+.PHONY : module/pid.cpp.s
+
+module/remote_control.obj: module/remote_control.cpp.obj
+.PHONY : module/remote_control.obj
+
+# target to build an object file
+module/remote_control.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.obj
+.PHONY : module/remote_control.cpp.obj
+
+module/remote_control.i: module/remote_control.cpp.i
+.PHONY : module/remote_control.i
+
+# target to preprocess a source file
+module/remote_control.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.i
+.PHONY : module/remote_control.cpp.i
+
+module/remote_control.s: module/remote_control.cpp.s
+.PHONY : module/remote_control.s
+
+# target to generate assembly for a file
+module/remote_control.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.s
+.PHONY : module/remote_control.cpp.s
+
+module/user_lib.obj: module/user_lib.cpp.obj
+.PHONY : module/user_lib.obj
+
+# target to build an object file
+module/user_lib.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.obj
+.PHONY : module/user_lib.cpp.obj
+
+module/user_lib.i: module/user_lib.cpp.i
+.PHONY : module/user_lib.i
+
+# target to preprocess a source file
+module/user_lib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.i
+.PHONY : module/user_lib.cpp.i
+
+module/user_lib.s: module/user_lib.cpp.s
+.PHONY : module/user_lib.s
+
+# target to generate assembly for a file
+module/user_lib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.s
+.PHONY : module/user_lib.cpp.s
+
 startup/startup_stm32f407xx.obj: startup/startup_stm32f407xx.s.obj
 .PHONY : startup/startup_stm32f407xx.obj
 
@@ -1681,6 +2017,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Gimbal_Board.elf
+	@echo ... Application/CAN_receive.obj
+	@echo ... Application/CAN_receive.i
+	@echo ... Application/CAN_receive.s
+	@echo ... Application/System_Config.obj
+	@echo ... Application/System_Config.i
+	@echo ... Application/System_Config.s
+	@echo ... Application/gimbal_task.obj
+	@echo ... Application/gimbal_task.i
+	@echo ... Application/gimbal_task.s
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.s
@@ -1873,6 +2218,39 @@ help:
 	@echo ... Src/usbd_desc.obj
 	@echo ... Src/usbd_desc.i
 	@echo ... Src/usbd_desc.s
+	@echo ... hardware/bsp_usart.obj
+	@echo ... hardware/bsp_usart.i
+	@echo ... hardware/bsp_usart.s
+	@echo ... hardware/buzzer.obj
+	@echo ... hardware/buzzer.i
+	@echo ... hardware/buzzer.s
+	@echo ... hardware/led.obj
+	@echo ... hardware/led.i
+	@echo ... hardware/led.s
+	@echo ... module/M_Gimbal.obj
+	@echo ... module/M_Gimbal.i
+	@echo ... module/M_Gimbal.s
+	@echo ... module/first_order_filter.obj
+	@echo ... module/first_order_filter.i
+	@echo ... module/first_order_filter.s
+	@echo ... module/motor_3508.obj
+	@echo ... module/motor_3508.i
+	@echo ... module/motor_3508.s
+	@echo ... module/motor_6020.obj
+	@echo ... module/motor_6020.i
+	@echo ... module/motor_6020.s
+	@echo ... module/motor_measure.obj
+	@echo ... module/motor_measure.i
+	@echo ... module/motor_measure.s
+	@echo ... module/pid.obj
+	@echo ... module/pid.i
+	@echo ... module/pid.s
+	@echo ... module/remote_control.obj
+	@echo ... module/remote_control.i
+	@echo ... module/remote_control.s
+	@echo ... module/user_lib.obj
+	@echo ... module/user_lib.i
+	@echo ... module/user_lib.s
 	@echo ... startup/startup_stm32f407xx.obj
 .PHONY : help
 

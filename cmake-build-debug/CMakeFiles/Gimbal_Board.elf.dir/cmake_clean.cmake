@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/Application/System_Config.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/Application/gimbal_task.cpp.obj"
   "CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
   "CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj"
   "CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj"
@@ -63,6 +66,17 @@ file(REMOVE_RECURSE
   "CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_cdc_if.c.obj"
   "CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_conf.c.obj"
   "CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/hardware/buzzer.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/hardware/led.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/module/first_order_filter.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/module/motor_3508.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/module/motor_6020.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/module/motor_measure.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/module/pid.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/module/remote_control.cpp.obj"
+  "CMakeFiles/Gimbal_Board.elf.dir/module/user_lib.cpp.obj"
   "CMakeFiles/Gimbal_Board.elf.dir/startup/startup_stm32f407xx.s.obj"
   "Gimbal_Board.elf"
   "Gimbal_Board.elf.manifest"
@@ -70,6 +84,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang ASM C)
+foreach(lang ASM C CXX)
   include(CMakeFiles/Gimbal_Board.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
