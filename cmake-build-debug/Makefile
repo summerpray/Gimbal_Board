@@ -128,29 +128,53 @@ Gimbal_Board.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/build
 .PHONY : Gimbal_Board.elf/fast
 
-Application/CAN_receive.obj: Application/CAN_receive.cpp.obj
-.PHONY : Application/CAN_receive.obj
+Application/Communication_task.obj: Application/Communication_task.cpp.obj
+.PHONY : Application/Communication_task.obj
 
 # target to build an object file
-Application/CAN_receive.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.obj
-.PHONY : Application/CAN_receive.cpp.obj
+Application/Communication_task.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/Communication_task.cpp.obj
+.PHONY : Application/Communication_task.cpp.obj
 
-Application/CAN_receive.i: Application/CAN_receive.cpp.i
-.PHONY : Application/CAN_receive.i
+Application/Communication_task.i: Application/Communication_task.cpp.i
+.PHONY : Application/Communication_task.i
 
 # target to preprocess a source file
-Application/CAN_receive.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.i
-.PHONY : Application/CAN_receive.cpp.i
+Application/Communication_task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/Communication_task.cpp.i
+.PHONY : Application/Communication_task.cpp.i
 
-Application/CAN_receive.s: Application/CAN_receive.cpp.s
-.PHONY : Application/CAN_receive.s
+Application/Communication_task.s: Application/Communication_task.cpp.s
+.PHONY : Application/Communication_task.s
 
 # target to generate assembly for a file
-Application/CAN_receive.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/CAN_receive.cpp.s
-.PHONY : Application/CAN_receive.cpp.s
+Application/Communication_task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/Communication_task.cpp.s
+.PHONY : Application/Communication_task.cpp.s
+
+Application/INS_task.obj: Application/INS_task.cpp.obj
+.PHONY : Application/INS_task.obj
+
+# target to build an object file
+Application/INS_task.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/INS_task.cpp.obj
+.PHONY : Application/INS_task.cpp.obj
+
+Application/INS_task.i: Application/INS_task.cpp.i
+.PHONY : Application/INS_task.i
+
+# target to preprocess a source file
+Application/INS_task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/INS_task.cpp.i
+.PHONY : Application/INS_task.cpp.i
+
+Application/INS_task.s: Application/INS_task.cpp.s
+.PHONY : Application/INS_task.s
+
+# target to generate assembly for a file
+Application/INS_task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Application/INS_task.cpp.s
+.PHONY : Application/INS_task.cpp.s
 
 Application/System_Config.obj: Application/System_Config.cpp.obj
 .PHONY : Application/System_Config.obj
@@ -1736,6 +1760,630 @@ Src/usbd_desc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.s
 .PHONY : Src/usbd_desc.c.s
 
+components/algorithm/AHRS_middleware.obj: components/algorithm/AHRS_middleware.c.obj
+.PHONY : components/algorithm/AHRS_middleware.obj
+
+# target to build an object file
+components/algorithm/AHRS_middleware.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/AHRS_middleware.c.obj
+.PHONY : components/algorithm/AHRS_middleware.c.obj
+
+components/algorithm/AHRS_middleware.i: components/algorithm/AHRS_middleware.c.i
+.PHONY : components/algorithm/AHRS_middleware.i
+
+# target to preprocess a source file
+components/algorithm/AHRS_middleware.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/AHRS_middleware.c.i
+.PHONY : components/algorithm/AHRS_middleware.c.i
+
+components/algorithm/AHRS_middleware.s: components/algorithm/AHRS_middleware.c.s
+.PHONY : components/algorithm/AHRS_middleware.s
+
+# target to generate assembly for a file
+components/algorithm/AHRS_middleware.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/AHRS_middleware.c.s
+.PHONY : components/algorithm/AHRS_middleware.c.s
+
+components/algorithm/user_lib.obj: components/algorithm/user_lib.c.obj
+.PHONY : components/algorithm/user_lib.obj
+
+# target to build an object file
+components/algorithm/user_lib.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/user_lib.c.obj
+.PHONY : components/algorithm/user_lib.c.obj
+
+components/algorithm/user_lib.i: components/algorithm/user_lib.c.i
+.PHONY : components/algorithm/user_lib.i
+
+# target to preprocess a source file
+components/algorithm/user_lib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/user_lib.c.i
+.PHONY : components/algorithm/user_lib.c.i
+
+components/algorithm/user_lib.s: components/algorithm/user_lib.c.s
+.PHONY : components/algorithm/user_lib.s
+
+# target to generate assembly for a file
+components/algorithm/user_lib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/user_lib.c.s
+.PHONY : components/algorithm/user_lib.c.s
+
+components/devices/BMI088Middleware.obj: components/devices/BMI088Middleware.c.obj
+.PHONY : components/devices/BMI088Middleware.obj
+
+# target to build an object file
+components/devices/BMI088Middleware.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/BMI088Middleware.c.obj
+.PHONY : components/devices/BMI088Middleware.c.obj
+
+components/devices/BMI088Middleware.i: components/devices/BMI088Middleware.c.i
+.PHONY : components/devices/BMI088Middleware.i
+
+# target to preprocess a source file
+components/devices/BMI088Middleware.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/BMI088Middleware.c.i
+.PHONY : components/devices/BMI088Middleware.c.i
+
+components/devices/BMI088Middleware.s: components/devices/BMI088Middleware.c.s
+.PHONY : components/devices/BMI088Middleware.s
+
+# target to generate assembly for a file
+components/devices/BMI088Middleware.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/BMI088Middleware.c.s
+.PHONY : components/devices/BMI088Middleware.c.s
+
+components/devices/BMI088driver.obj: components/devices/BMI088driver.c.obj
+.PHONY : components/devices/BMI088driver.obj
+
+# target to build an object file
+components/devices/BMI088driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/BMI088driver.c.obj
+.PHONY : components/devices/BMI088driver.c.obj
+
+components/devices/BMI088driver.i: components/devices/BMI088driver.c.i
+.PHONY : components/devices/BMI088driver.i
+
+# target to preprocess a source file
+components/devices/BMI088driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/BMI088driver.c.i
+.PHONY : components/devices/BMI088driver.c.i
+
+components/devices/BMI088driver.s: components/devices/BMI088driver.c.s
+.PHONY : components/devices/BMI088driver.s
+
+# target to generate assembly for a file
+components/devices/BMI088driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/BMI088driver.c.s
+.PHONY : components/devices/BMI088driver.c.s
+
+components/devices/OLED.obj: components/devices/OLED.c.obj
+.PHONY : components/devices/OLED.obj
+
+# target to build an object file
+components/devices/OLED.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/OLED.c.obj
+.PHONY : components/devices/OLED.c.obj
+
+components/devices/OLED.i: components/devices/OLED.c.i
+.PHONY : components/devices/OLED.i
+
+# target to preprocess a source file
+components/devices/OLED.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/OLED.c.i
+.PHONY : components/devices/OLED.c.i
+
+components/devices/OLED.s: components/devices/OLED.c.s
+.PHONY : components/devices/OLED.s
+
+# target to generate assembly for a file
+components/devices/OLED.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/OLED.c.s
+.PHONY : components/devices/OLED.c.s
+
+components/devices/ist8310driver.obj: components/devices/ist8310driver.c.obj
+.PHONY : components/devices/ist8310driver.obj
+
+# target to build an object file
+components/devices/ist8310driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/ist8310driver.c.obj
+.PHONY : components/devices/ist8310driver.c.obj
+
+components/devices/ist8310driver.i: components/devices/ist8310driver.c.i
+.PHONY : components/devices/ist8310driver.i
+
+# target to preprocess a source file
+components/devices/ist8310driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/ist8310driver.c.i
+.PHONY : components/devices/ist8310driver.c.i
+
+components/devices/ist8310driver.s: components/devices/ist8310driver.c.s
+.PHONY : components/devices/ist8310driver.s
+
+# target to generate assembly for a file
+components/devices/ist8310driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/ist8310driver.c.s
+.PHONY : components/devices/ist8310driver.c.s
+
+components/devices/ist8310driver_middleware.obj: components/devices/ist8310driver_middleware.c.obj
+.PHONY : components/devices/ist8310driver_middleware.obj
+
+# target to build an object file
+components/devices/ist8310driver_middleware.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/ist8310driver_middleware.c.obj
+.PHONY : components/devices/ist8310driver_middleware.c.obj
+
+components/devices/ist8310driver_middleware.i: components/devices/ist8310driver_middleware.c.i
+.PHONY : components/devices/ist8310driver_middleware.i
+
+# target to preprocess a source file
+components/devices/ist8310driver_middleware.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/ist8310driver_middleware.c.i
+.PHONY : components/devices/ist8310driver_middleware.c.i
+
+components/devices/ist8310driver_middleware.s: components/devices/ist8310driver_middleware.c.s
+.PHONY : components/devices/ist8310driver_middleware.s
+
+# target to generate assembly for a file
+components/devices/ist8310driver_middleware.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/ist8310driver_middleware.c.s
+.PHONY : components/devices/ist8310driver_middleware.c.s
+
+components/support/CRC8_CRC16.obj: components/support/CRC8_CRC16.c.obj
+.PHONY : components/support/CRC8_CRC16.obj
+
+# target to build an object file
+components/support/CRC8_CRC16.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/support/CRC8_CRC16.c.obj
+.PHONY : components/support/CRC8_CRC16.c.obj
+
+components/support/CRC8_CRC16.i: components/support/CRC8_CRC16.c.i
+.PHONY : components/support/CRC8_CRC16.i
+
+# target to preprocess a source file
+components/support/CRC8_CRC16.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/support/CRC8_CRC16.c.i
+.PHONY : components/support/CRC8_CRC16.c.i
+
+components/support/CRC8_CRC16.s: components/support/CRC8_CRC16.c.s
+.PHONY : components/support/CRC8_CRC16.s
+
+# target to generate assembly for a file
+components/support/CRC8_CRC16.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/support/CRC8_CRC16.c.s
+.PHONY : components/support/CRC8_CRC16.c.s
+
+components/support/fifo.obj: components/support/fifo.c.obj
+.PHONY : components/support/fifo.obj
+
+# target to build an object file
+components/support/fifo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/support/fifo.c.obj
+.PHONY : components/support/fifo.c.obj
+
+components/support/fifo.i: components/support/fifo.c.i
+.PHONY : components/support/fifo.i
+
+# target to preprocess a source file
+components/support/fifo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/support/fifo.c.i
+.PHONY : components/support/fifo.c.i
+
+components/support/fifo.s: components/support/fifo.c.s
+.PHONY : components/support/fifo.s
+
+# target to generate assembly for a file
+components/support/fifo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/support/fifo.c.s
+.PHONY : components/support/fifo.c.s
+
+components/support/mem_mang4.obj: components/support/mem_mang4.c.obj
+.PHONY : components/support/mem_mang4.obj
+
+# target to build an object file
+components/support/mem_mang4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/support/mem_mang4.c.obj
+.PHONY : components/support/mem_mang4.c.obj
+
+components/support/mem_mang4.i: components/support/mem_mang4.c.i
+.PHONY : components/support/mem_mang4.i
+
+# target to preprocess a source file
+components/support/mem_mang4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/support/mem_mang4.c.i
+.PHONY : components/support/mem_mang4.c.i
+
+components/support/mem_mang4.s: components/support/mem_mang4.c.s
+.PHONY : components/support/mem_mang4.s
+
+# target to generate assembly for a file
+components/support/mem_mang4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/support/mem_mang4.c.s
+.PHONY : components/support/mem_mang4.c.s
+
+hardware/bsp_adc.obj: hardware/bsp_adc.c.obj
+.PHONY : hardware/bsp_adc.obj
+
+# target to build an object file
+hardware/bsp_adc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_adc.c.obj
+.PHONY : hardware/bsp_adc.c.obj
+
+hardware/bsp_adc.i: hardware/bsp_adc.c.i
+.PHONY : hardware/bsp_adc.i
+
+# target to preprocess a source file
+hardware/bsp_adc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_adc.c.i
+.PHONY : hardware/bsp_adc.c.i
+
+hardware/bsp_adc.s: hardware/bsp_adc.c.s
+.PHONY : hardware/bsp_adc.s
+
+# target to generate assembly for a file
+hardware/bsp_adc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_adc.c.s
+.PHONY : hardware/bsp_adc.c.s
+
+hardware/bsp_buzzer.obj: hardware/bsp_buzzer.c.obj
+.PHONY : hardware/bsp_buzzer.obj
+
+# target to build an object file
+hardware/bsp_buzzer.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_buzzer.c.obj
+.PHONY : hardware/bsp_buzzer.c.obj
+
+hardware/bsp_buzzer.i: hardware/bsp_buzzer.c.i
+.PHONY : hardware/bsp_buzzer.i
+
+# target to preprocess a source file
+hardware/bsp_buzzer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_buzzer.c.i
+.PHONY : hardware/bsp_buzzer.c.i
+
+hardware/bsp_buzzer.s: hardware/bsp_buzzer.c.s
+.PHONY : hardware/bsp_buzzer.s
+
+# target to generate assembly for a file
+hardware/bsp_buzzer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_buzzer.c.s
+.PHONY : hardware/bsp_buzzer.c.s
+
+hardware/bsp_can.obj: hardware/bsp_can.c.obj
+.PHONY : hardware/bsp_can.obj
+
+# target to build an object file
+hardware/bsp_can.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_can.c.obj
+.PHONY : hardware/bsp_can.c.obj
+
+hardware/bsp_can.i: hardware/bsp_can.c.i
+.PHONY : hardware/bsp_can.i
+
+# target to preprocess a source file
+hardware/bsp_can.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_can.c.i
+.PHONY : hardware/bsp_can.c.i
+
+hardware/bsp_can.s: hardware/bsp_can.c.s
+.PHONY : hardware/bsp_can.s
+
+# target to generate assembly for a file
+hardware/bsp_can.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_can.c.s
+.PHONY : hardware/bsp_can.c.s
+
+hardware/bsp_crc32.obj: hardware/bsp_crc32.c.obj
+.PHONY : hardware/bsp_crc32.obj
+
+# target to build an object file
+hardware/bsp_crc32.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_crc32.c.obj
+.PHONY : hardware/bsp_crc32.c.obj
+
+hardware/bsp_crc32.i: hardware/bsp_crc32.c.i
+.PHONY : hardware/bsp_crc32.i
+
+# target to preprocess a source file
+hardware/bsp_crc32.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_crc32.c.i
+.PHONY : hardware/bsp_crc32.c.i
+
+hardware/bsp_crc32.s: hardware/bsp_crc32.c.s
+.PHONY : hardware/bsp_crc32.s
+
+# target to generate assembly for a file
+hardware/bsp_crc32.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_crc32.c.s
+.PHONY : hardware/bsp_crc32.c.s
+
+hardware/bsp_delay.obj: hardware/bsp_delay.c.obj
+.PHONY : hardware/bsp_delay.obj
+
+# target to build an object file
+hardware/bsp_delay.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_delay.c.obj
+.PHONY : hardware/bsp_delay.c.obj
+
+hardware/bsp_delay.i: hardware/bsp_delay.c.i
+.PHONY : hardware/bsp_delay.i
+
+# target to preprocess a source file
+hardware/bsp_delay.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_delay.c.i
+.PHONY : hardware/bsp_delay.c.i
+
+hardware/bsp_delay.s: hardware/bsp_delay.c.s
+.PHONY : hardware/bsp_delay.s
+
+# target to generate assembly for a file
+hardware/bsp_delay.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_delay.c.s
+.PHONY : hardware/bsp_delay.c.s
+
+hardware/bsp_flash.obj: hardware/bsp_flash.c.obj
+.PHONY : hardware/bsp_flash.obj
+
+# target to build an object file
+hardware/bsp_flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_flash.c.obj
+.PHONY : hardware/bsp_flash.c.obj
+
+hardware/bsp_flash.i: hardware/bsp_flash.c.i
+.PHONY : hardware/bsp_flash.i
+
+# target to preprocess a source file
+hardware/bsp_flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_flash.c.i
+.PHONY : hardware/bsp_flash.c.i
+
+hardware/bsp_flash.s: hardware/bsp_flash.c.s
+.PHONY : hardware/bsp_flash.s
+
+# target to generate assembly for a file
+hardware/bsp_flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_flash.c.s
+.PHONY : hardware/bsp_flash.c.s
+
+hardware/bsp_fric.obj: hardware/bsp_fric.c.obj
+.PHONY : hardware/bsp_fric.obj
+
+# target to build an object file
+hardware/bsp_fric.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_fric.c.obj
+.PHONY : hardware/bsp_fric.c.obj
+
+hardware/bsp_fric.i: hardware/bsp_fric.c.i
+.PHONY : hardware/bsp_fric.i
+
+# target to preprocess a source file
+hardware/bsp_fric.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_fric.c.i
+.PHONY : hardware/bsp_fric.c.i
+
+hardware/bsp_fric.s: hardware/bsp_fric.c.s
+.PHONY : hardware/bsp_fric.s
+
+# target to generate assembly for a file
+hardware/bsp_fric.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_fric.c.s
+.PHONY : hardware/bsp_fric.c.s
+
+hardware/bsp_i2c.obj: hardware/bsp_i2c.c.obj
+.PHONY : hardware/bsp_i2c.obj
+
+# target to build an object file
+hardware/bsp_i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_i2c.c.obj
+.PHONY : hardware/bsp_i2c.c.obj
+
+hardware/bsp_i2c.i: hardware/bsp_i2c.c.i
+.PHONY : hardware/bsp_i2c.i
+
+# target to preprocess a source file
+hardware/bsp_i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_i2c.c.i
+.PHONY : hardware/bsp_i2c.c.i
+
+hardware/bsp_i2c.s: hardware/bsp_i2c.c.s
+.PHONY : hardware/bsp_i2c.s
+
+# target to generate assembly for a file
+hardware/bsp_i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_i2c.c.s
+.PHONY : hardware/bsp_i2c.c.s
+
+hardware/bsp_imu_pwm.obj: hardware/bsp_imu_pwm.c.obj
+.PHONY : hardware/bsp_imu_pwm.obj
+
+# target to build an object file
+hardware/bsp_imu_pwm.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_imu_pwm.c.obj
+.PHONY : hardware/bsp_imu_pwm.c.obj
+
+hardware/bsp_imu_pwm.i: hardware/bsp_imu_pwm.c.i
+.PHONY : hardware/bsp_imu_pwm.i
+
+# target to preprocess a source file
+hardware/bsp_imu_pwm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_imu_pwm.c.i
+.PHONY : hardware/bsp_imu_pwm.c.i
+
+hardware/bsp_imu_pwm.s: hardware/bsp_imu_pwm.c.s
+.PHONY : hardware/bsp_imu_pwm.s
+
+# target to generate assembly for a file
+hardware/bsp_imu_pwm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_imu_pwm.c.s
+.PHONY : hardware/bsp_imu_pwm.c.s
+
+hardware/bsp_laser.obj: hardware/bsp_laser.c.obj
+.PHONY : hardware/bsp_laser.obj
+
+# target to build an object file
+hardware/bsp_laser.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_laser.c.obj
+.PHONY : hardware/bsp_laser.c.obj
+
+hardware/bsp_laser.i: hardware/bsp_laser.c.i
+.PHONY : hardware/bsp_laser.i
+
+# target to preprocess a source file
+hardware/bsp_laser.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_laser.c.i
+.PHONY : hardware/bsp_laser.c.i
+
+hardware/bsp_laser.s: hardware/bsp_laser.c.s
+.PHONY : hardware/bsp_laser.s
+
+# target to generate assembly for a file
+hardware/bsp_laser.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_laser.c.s
+.PHONY : hardware/bsp_laser.c.s
+
+hardware/bsp_led.obj: hardware/bsp_led.c.obj
+.PHONY : hardware/bsp_led.obj
+
+# target to build an object file
+hardware/bsp_led.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_led.c.obj
+.PHONY : hardware/bsp_led.c.obj
+
+hardware/bsp_led.i: hardware/bsp_led.c.i
+.PHONY : hardware/bsp_led.i
+
+# target to preprocess a source file
+hardware/bsp_led.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_led.c.i
+.PHONY : hardware/bsp_led.c.i
+
+hardware/bsp_led.s: hardware/bsp_led.c.s
+.PHONY : hardware/bsp_led.s
+
+# target to generate assembly for a file
+hardware/bsp_led.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_led.c.s
+.PHONY : hardware/bsp_led.c.s
+
+hardware/bsp_rc.obj: hardware/bsp_rc.c.obj
+.PHONY : hardware/bsp_rc.obj
+
+# target to build an object file
+hardware/bsp_rc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rc.c.obj
+.PHONY : hardware/bsp_rc.c.obj
+
+hardware/bsp_rc.i: hardware/bsp_rc.c.i
+.PHONY : hardware/bsp_rc.i
+
+# target to preprocess a source file
+hardware/bsp_rc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rc.c.i
+.PHONY : hardware/bsp_rc.c.i
+
+hardware/bsp_rc.s: hardware/bsp_rc.c.s
+.PHONY : hardware/bsp_rc.s
+
+# target to generate assembly for a file
+hardware/bsp_rc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rc.c.s
+.PHONY : hardware/bsp_rc.c.s
+
+hardware/bsp_rng.obj: hardware/bsp_rng.c.obj
+.PHONY : hardware/bsp_rng.obj
+
+# target to build an object file
+hardware/bsp_rng.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rng.c.obj
+.PHONY : hardware/bsp_rng.c.obj
+
+hardware/bsp_rng.i: hardware/bsp_rng.c.i
+.PHONY : hardware/bsp_rng.i
+
+# target to preprocess a source file
+hardware/bsp_rng.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rng.c.i
+.PHONY : hardware/bsp_rng.c.i
+
+hardware/bsp_rng.s: hardware/bsp_rng.c.s
+.PHONY : hardware/bsp_rng.s
+
+# target to generate assembly for a file
+hardware/bsp_rng.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rng.c.s
+.PHONY : hardware/bsp_rng.c.s
+
+hardware/bsp_servo_pwm.obj: hardware/bsp_servo_pwm.c.obj
+.PHONY : hardware/bsp_servo_pwm.obj
+
+# target to build an object file
+hardware/bsp_servo_pwm.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_servo_pwm.c.obj
+.PHONY : hardware/bsp_servo_pwm.c.obj
+
+hardware/bsp_servo_pwm.i: hardware/bsp_servo_pwm.c.i
+.PHONY : hardware/bsp_servo_pwm.i
+
+# target to preprocess a source file
+hardware/bsp_servo_pwm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_servo_pwm.c.i
+.PHONY : hardware/bsp_servo_pwm.c.i
+
+hardware/bsp_servo_pwm.s: hardware/bsp_servo_pwm.c.s
+.PHONY : hardware/bsp_servo_pwm.s
+
+# target to generate assembly for a file
+hardware/bsp_servo_pwm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_servo_pwm.c.s
+.PHONY : hardware/bsp_servo_pwm.c.s
+
+hardware/bsp_spi.obj: hardware/bsp_spi.c.obj
+.PHONY : hardware/bsp_spi.obj
+
+# target to build an object file
+hardware/bsp_spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_spi.c.obj
+.PHONY : hardware/bsp_spi.c.obj
+
+hardware/bsp_spi.i: hardware/bsp_spi.c.i
+.PHONY : hardware/bsp_spi.i
+
+# target to preprocess a source file
+hardware/bsp_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_spi.c.i
+.PHONY : hardware/bsp_spi.c.i
+
+hardware/bsp_spi.s: hardware/bsp_spi.c.s
+.PHONY : hardware/bsp_spi.s
+
+# target to generate assembly for a file
+hardware/bsp_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_spi.c.s
+.PHONY : hardware/bsp_spi.c.s
+
+hardware/bsp_usart.obj: hardware/bsp_usart.c.obj
+.PHONY : hardware/bsp_usart.obj
+
+# target to build an object file
+hardware/bsp_usart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.c.obj
+.PHONY : hardware/bsp_usart.c.obj
+
+hardware/bsp_usart.i: hardware/bsp_usart.c.i
+.PHONY : hardware/bsp_usart.i
+
+# target to preprocess a source file
+hardware/bsp_usart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.c.i
+.PHONY : hardware/bsp_usart.c.i
+
+hardware/bsp_usart.s: hardware/bsp_usart.c.s
+.PHONY : hardware/bsp_usart.s
+
+# target to generate assembly for a file
+hardware/bsp_usart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.c.s
+.PHONY : hardware/bsp_usart.c.s
+
 hardware/bsp_usart.obj: hardware/bsp_usart.cpp.obj
 .PHONY : hardware/bsp_usart.obj
 
@@ -1831,6 +2479,30 @@ module/M_Gimbal.s: module/M_Gimbal.cpp.s
 module/M_Gimbal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/M_Gimbal.cpp.s
 .PHONY : module/M_Gimbal.cpp.s
+
+module/can.obj: module/can.cpp.obj
+.PHONY : module/can.obj
+
+# target to build an object file
+module/can.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/can.cpp.obj
+.PHONY : module/can.cpp.obj
+
+module/can.i: module/can.cpp.i
+.PHONY : module/can.i
+
+# target to preprocess a source file
+module/can.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/can.cpp.i
+.PHONY : module/can.cpp.i
+
+module/can.s: module/can.cpp.s
+.PHONY : module/can.s
+
+# target to generate assembly for a file
+module/can.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/module/can.cpp.s
+.PHONY : module/can.cpp.s
 
 module/first_order_filter.obj: module/first_order_filter.cpp.obj
 .PHONY : module/first_order_filter.obj
@@ -2017,9 +2689,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Gimbal_Board.elf
-	@echo ... Application/CAN_receive.obj
-	@echo ... Application/CAN_receive.i
-	@echo ... Application/CAN_receive.s
+	@echo ... Application/Communication_task.obj
+	@echo ... Application/Communication_task.i
+	@echo ... Application/Communication_task.s
+	@echo ... Application/INS_task.obj
+	@echo ... Application/INS_task.i
+	@echo ... Application/INS_task.s
 	@echo ... Application/System_Config.obj
 	@echo ... Application/System_Config.i
 	@echo ... Application/System_Config.s
@@ -2218,6 +2893,84 @@ help:
 	@echo ... Src/usbd_desc.obj
 	@echo ... Src/usbd_desc.i
 	@echo ... Src/usbd_desc.s
+	@echo ... components/algorithm/AHRS_middleware.obj
+	@echo ... components/algorithm/AHRS_middleware.i
+	@echo ... components/algorithm/AHRS_middleware.s
+	@echo ... components/algorithm/user_lib.obj
+	@echo ... components/algorithm/user_lib.i
+	@echo ... components/algorithm/user_lib.s
+	@echo ... components/devices/BMI088Middleware.obj
+	@echo ... components/devices/BMI088Middleware.i
+	@echo ... components/devices/BMI088Middleware.s
+	@echo ... components/devices/BMI088driver.obj
+	@echo ... components/devices/BMI088driver.i
+	@echo ... components/devices/BMI088driver.s
+	@echo ... components/devices/OLED.obj
+	@echo ... components/devices/OLED.i
+	@echo ... components/devices/OLED.s
+	@echo ... components/devices/ist8310driver.obj
+	@echo ... components/devices/ist8310driver.i
+	@echo ... components/devices/ist8310driver.s
+	@echo ... components/devices/ist8310driver_middleware.obj
+	@echo ... components/devices/ist8310driver_middleware.i
+	@echo ... components/devices/ist8310driver_middleware.s
+	@echo ... components/support/CRC8_CRC16.obj
+	@echo ... components/support/CRC8_CRC16.i
+	@echo ... components/support/CRC8_CRC16.s
+	@echo ... components/support/fifo.obj
+	@echo ... components/support/fifo.i
+	@echo ... components/support/fifo.s
+	@echo ... components/support/mem_mang4.obj
+	@echo ... components/support/mem_mang4.i
+	@echo ... components/support/mem_mang4.s
+	@echo ... hardware/bsp_adc.obj
+	@echo ... hardware/bsp_adc.i
+	@echo ... hardware/bsp_adc.s
+	@echo ... hardware/bsp_buzzer.obj
+	@echo ... hardware/bsp_buzzer.i
+	@echo ... hardware/bsp_buzzer.s
+	@echo ... hardware/bsp_can.obj
+	@echo ... hardware/bsp_can.i
+	@echo ... hardware/bsp_can.s
+	@echo ... hardware/bsp_crc32.obj
+	@echo ... hardware/bsp_crc32.i
+	@echo ... hardware/bsp_crc32.s
+	@echo ... hardware/bsp_delay.obj
+	@echo ... hardware/bsp_delay.i
+	@echo ... hardware/bsp_delay.s
+	@echo ... hardware/bsp_flash.obj
+	@echo ... hardware/bsp_flash.i
+	@echo ... hardware/bsp_flash.s
+	@echo ... hardware/bsp_fric.obj
+	@echo ... hardware/bsp_fric.i
+	@echo ... hardware/bsp_fric.s
+	@echo ... hardware/bsp_i2c.obj
+	@echo ... hardware/bsp_i2c.i
+	@echo ... hardware/bsp_i2c.s
+	@echo ... hardware/bsp_imu_pwm.obj
+	@echo ... hardware/bsp_imu_pwm.i
+	@echo ... hardware/bsp_imu_pwm.s
+	@echo ... hardware/bsp_laser.obj
+	@echo ... hardware/bsp_laser.i
+	@echo ... hardware/bsp_laser.s
+	@echo ... hardware/bsp_led.obj
+	@echo ... hardware/bsp_led.i
+	@echo ... hardware/bsp_led.s
+	@echo ... hardware/bsp_rc.obj
+	@echo ... hardware/bsp_rc.i
+	@echo ... hardware/bsp_rc.s
+	@echo ... hardware/bsp_rng.obj
+	@echo ... hardware/bsp_rng.i
+	@echo ... hardware/bsp_rng.s
+	@echo ... hardware/bsp_servo_pwm.obj
+	@echo ... hardware/bsp_servo_pwm.i
+	@echo ... hardware/bsp_servo_pwm.s
+	@echo ... hardware/bsp_spi.obj
+	@echo ... hardware/bsp_spi.i
+	@echo ... hardware/bsp_spi.s
+	@echo ... hardware/bsp_usart.obj
+	@echo ... hardware/bsp_usart.i
+	@echo ... hardware/bsp_usart.s
 	@echo ... hardware/bsp_usart.obj
 	@echo ... hardware/bsp_usart.i
 	@echo ... hardware/bsp_usart.s
@@ -2230,6 +2983,9 @@ help:
 	@echo ... module/M_Gimbal.obj
 	@echo ... module/M_Gimbal.i
 	@echo ... module/M_Gimbal.s
+	@echo ... module/can.obj
+	@echo ... module/can.i
+	@echo ... module/can.s
 	@echo ... module/first_order_filter.obj
 	@echo ... module/first_order_filter.i
 	@echo ... module/first_order_filter.s

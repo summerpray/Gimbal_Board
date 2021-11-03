@@ -11,7 +11,13 @@
 #include "first_order_filter.h"
 #include "motor_6020.h"
 #include "remote_control.h"
-#include "CAN_receive.h"
+#include "motor_measure.h"
+#include "can.h"
+#include "user_lib.h"
+#include "Communication_task.h"
+#include <cmath>
+#include "INS_task.h"
+
 
 //pitch speed close-loop PID params, max out and max iout
 //pitch 速度环 PID参数以及 PID最大输出，积分输出
@@ -137,13 +143,88 @@
 #ifndef MOTOR_ECD_TO_RAD
 #define MOTOR_ECD_TO_RAD 0.000766990394f //      2*  PI  /8192
 #endif
+typedef enum {
+    YAW = 0,
+    PITCH,
+    LEFT_FRIC,
+    RIGHT_FIRC,
+} gimbal_motor_id;
 
+//云台状态机
+typedef enum {
+    GIMBAL_MOTOR_RAW = 0, //电机原始值控制
+    GIMBAL_MOTOR_GYRO,    //电机陀螺仪角度控制
+    GIMBAL_MOTOR_ENCONDE, //电机编码值角度控制
+} gimbal_motor_mode_e;
+
+//云台行为模式
+typedef enum
+{
+    GIMBAL_ZERO_FORCE = 0,
+    GIMBAL_INIT,
+    GIMBAL_CALI,
+    GIMBAL_ABSOLUTE_ANGLE,
+    GIMBAL_RELATIVE_ANGLE,
+    GIMBAL_MOTIONLESS,
+} gimbal_behaviour_e;
+
+typedef struct
+{
+    fp32 kp;
+    fp32 ki;
+    fp32 kd;
+
+    fp32 set;
+    fp32 get;
+    fp32 err;
+
+    fp32 max_out;
+    fp32 max_iout;
+
+    fp32 Pout;
+    fp32 Iout;
+    fp32 Dout;
+
+    fp32 out;
+} gimbal_PID_t;
 
 class M_Gimbal{
 public:
-    const RC_ctrl_t  *Rc;
+    const RC_ctrl_t *gimbal_rc_ctrl;
+    const motor_measure *gimbal_motor_measure;
+    const fp32 *gimbal_INT_angle_point;                             //获取陀螺仪角度值
+    const fp32 *gimbal_INT_gyro_point;                              //获取陀螺仪角速度值
+    motor_6020 gimbal_yaw_motor;                                    //yaw云台电机
+    motor_6020 gimbal_pitch_motor;                                  //pitch云台电机
+    motor_3508 LEFT_FRIC;                                           //左摩擦轮电机
+    motor_3508 RIGHT_FRIC;                                          //右摩擦轮电机
+    gimbal_motor_mode_e gimbal_motor_mode;                          //云台控制状态机
+    gimbal_motor_mode_e last_gimbal_motor_mode;                     //云台上次控制状态机
+    gimbal_behaviour_e gimbal_behaviour_mode = GIMBAL_ZERO_FORCE;   //云台行为模式
 
-    void init();
+    pid gimbal_speed_pid[2];                                        //云台电机速度pid
+    pid gimbal_angle_pid[2];                                        //云台电机角度pid
+    CAN_Gimbal gimbal_can;                                         //接收云台can数据
+
+    first_order_filter gimbal_cmd_slow_set_vx;                      //使用一阶低通滤波减缓设定值
+    first_order_filter gimbal_cmd_slow_set_vy;                      //使用一阶低通滤波减缓设定值
+
+    fp32 max_yaw;                                                   //yaw电机最大值限位
+    fp32 min_yaw;                                                   //yaw电机最小值限位
+    fp32 max_pitch;                                                 //pitch电机最大值限位
+    fp32 min_pitch;                                                 //pitch电机最小值限位
+    uint16_t max_yaw_ecd;
+    uint16_t min_yaw_ecd;
+    uint16_t max_pitch_ecd;
+    uint16_t min_pitch_ecd;
+    uint8_t step;
+
+
+    void init(M_Gimbal *init);                                      //云台初始化
+    static void PID_clear(pid *gimbal_pid_clear);                   //清除pid
+    static void gimbal_total_pid_clear(M_Gimbal *pid_clear);        //清除所有pid
+    static void gimbal_feedback_update(M_Gimbal *feedback_update);  //更新数据
+    static fp32 motor_ecd_to_angle_change(uint16_t ecd, uint16_t offset_ecd);
 };
 
 #endif

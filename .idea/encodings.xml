@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/Application/CAN_receive.cpp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Application/CAN_receive.h" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/Communication_task.cpp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Application/Communication_task.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/System_Config.cpp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/System_Config.h" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Inc/struct_typedef.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cmsis-dap.cfg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hardware" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_adc.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_adc.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_buzzer.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_buzzer.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_can.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_can.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_crc32.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_crc32.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_delay.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_delay.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_flash.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_flash.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_fric.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_fric.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_i2c.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_i2c.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_imu_pwm.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_imu_pwm.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_laser.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_laser.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_led.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_led.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_rc.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_rc.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_rng.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_rng.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_servo_pwm.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_servo_pwm.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_spi.c" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_spi.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hardware/bsp_usart.c" charset="GBK" />
     <file url="file://$PROJECT_DIR$/module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module/struct_typedef.h" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>

@@ -148,7 +148,7 @@ __weak void start_task(void const * argument)
 
     /* USER CODE BEGIN test_task */
     /* Infinite loop */
-    for (;;) {
+    while(1) {
         Task_init();
         Task_start();
         /* Delete the default task. */

@@ -7,6 +7,10 @@
 
 #ifdef __cplusplus
 #include "struct_typedef.h"
+#include "main.h"
+
+
+
 class motor_measure {
 public:
     uint16_t ecd;
@@ -18,6 +22,8 @@ public:
     void get_motor_measure(const uint8_t *data);
 
 };
+
+
 
 #endif
 #endif //CLASSIS_BOARD_MOTOR_MEASURE_H

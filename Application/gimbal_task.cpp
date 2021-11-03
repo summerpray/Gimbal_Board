@@ -1,5 +1,5 @@
 /**
-  ****************************(C) COPYRIGHT 2019 DJI****************************
+  ****************************(C) COPYRIGHT 2021 *******************************
   * @file       gimbal_task.c/h
   * @brief      gimbal control task, because use the euler angle calculated by
   *             gyro sensor, range (-pi,pi), angle set-point must be in this
@@ -43,7 +43,7 @@
  *               ´úÂëÎÞBUG!
   ==============================================================================
   @endverbatim
-  ****************************(C) COPYRIGHT 2019 DJI****************************
+  ****************************(C) COPYRIGHT 2021 *******************************
   */
 #include "gimbal_task.h"
 #include "M_Gimbal.h"
@@ -51,7 +51,7 @@
 void gimbal_task(void *pvParameters){
     vTaskDelay(GIMBAL_TASK_INIT_TIME);
     M_Gimbal gimbal;
-    gimbal.init();
+    gimbal.init(&gimbal);
     while(1){
         ;
     }
