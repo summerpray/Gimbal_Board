@@ -42,10 +42,8 @@
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/Application"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/module"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/hardware"/>
-					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/Include"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/support"/>
-					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward"/>
@@ -85,10 +83,8 @@
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/Application"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/module"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/hardware"/>
-					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/Include"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/support"/>
-					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward"/>
@@ -583,42 +579,6 @@
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Src/usbd_desc.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/AHRS.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/AHRS.lib">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/AHRS_middleware.c">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/AHRS_middleware.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/Include/arm_common_tables.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/Include/arm_const_structs.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/Include/arm_math.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/Include/core_sc000.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/Include/core_sc300.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/arm_cortexM4lf_math.lib">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/user_lib.c">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/user_lib.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/BMI088Middleware.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
@@ -634,12 +594,6 @@
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/BMI088reg.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/OLED.c">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/OLED.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/ist8310driver.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
@@ -650,9 +604,6 @@
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/ist8310driver_middleware.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/oledfont.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/support/CRC8_CRC16.c">
@@ -697,22 +648,10 @@
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_can.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_crc32.c">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_crc32.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_delay.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_delay.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_flash.c">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_flash.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_fric.c">
@@ -739,34 +678,16 @@
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_laser.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_led.c">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_led.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_rc.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_rc.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_rng.c">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_rng.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_servo_pwm.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_servo_pwm.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_spi.c">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_spi.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_usart.c">

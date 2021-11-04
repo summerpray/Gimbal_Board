@@ -38,10 +38,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Application"
   "../module"
   "../hardware"
-  "../components/algorithm/Include"
   "../components/devices"
   "../components/support"
-  "../components/algorithm"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/worker/CLionProjects/Gimbal_Board/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
@@ -108,11 +106,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/worker/CLionProjects/Gimbal_Board/Src/usbd_cdc_if.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_cdc_if.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/Src/usbd_conf.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_conf.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/Src/usbd_desc.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.obj"
-  "C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/AHRS_middleware.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/AHRS_middleware.c.obj"
-  "C:/Users/worker/CLionProjects/Gimbal_Board/components/algorithm/user_lib.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/user_lib.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/BMI088Middleware.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/components/devices/BMI088Middleware.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/BMI088driver.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/components/devices/BMI088driver.c.obj"
-  "C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/OLED.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/components/devices/OLED.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/ist8310driver.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/components/devices/ist8310driver.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/ist8310driver_middleware.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/components/devices/ist8310driver_middleware.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/components/support/CRC8_CRC16.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/components/support/CRC8_CRC16.c.obj"
@@ -121,18 +116,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_adc.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_adc.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_buzzer.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_buzzer.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_can.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_can.c.obj"
-  "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_crc32.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_crc32.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_delay.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_delay.c.obj"
-  "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_flash.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_flash.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_fric.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_fric.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_i2c.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_i2c.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_imu_pwm.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_imu_pwm.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_laser.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_laser.c.obj"
-  "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_led.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_led.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_rc.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rc.c.obj"
-  "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_rng.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rng.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_servo_pwm.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_servo_pwm.c.obj"
-  "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_spi.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_spi.c.obj"
   "C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_usart.c" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_usart.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
@@ -161,10 +151,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Application"
   "../module"
   "../hardware"
-  "../components/algorithm/Include"
   "../components/devices"
   "../components/support"
-  "../components/algorithm"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/worker/CLionProjects/Gimbal_Board/Application/Communication_task.cpp" "C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir/Application/Communication_task.cpp.obj"
@@ -210,10 +198,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Application"
   "../module"
   "../hardware"
-  "../components/algorithm/Include"
   "../components/devices"
   "../components/support"
-  "../components/algorithm"
   )
 
 # The set of dependency files which are needed:

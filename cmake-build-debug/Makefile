@@ -1760,54 +1760,6 @@ Src/usbd_desc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.s
 .PHONY : Src/usbd_desc.c.s
 
-components/algorithm/AHRS_middleware.obj: components/algorithm/AHRS_middleware.c.obj
-.PHONY : components/algorithm/AHRS_middleware.obj
-
-# target to build an object file
-components/algorithm/AHRS_middleware.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/AHRS_middleware.c.obj
-.PHONY : components/algorithm/AHRS_middleware.c.obj
-
-components/algorithm/AHRS_middleware.i: components/algorithm/AHRS_middleware.c.i
-.PHONY : components/algorithm/AHRS_middleware.i
-
-# target to preprocess a source file
-components/algorithm/AHRS_middleware.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/AHRS_middleware.c.i
-.PHONY : components/algorithm/AHRS_middleware.c.i
-
-components/algorithm/AHRS_middleware.s: components/algorithm/AHRS_middleware.c.s
-.PHONY : components/algorithm/AHRS_middleware.s
-
-# target to generate assembly for a file
-components/algorithm/AHRS_middleware.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/AHRS_middleware.c.s
-.PHONY : components/algorithm/AHRS_middleware.c.s
-
-components/algorithm/user_lib.obj: components/algorithm/user_lib.c.obj
-.PHONY : components/algorithm/user_lib.obj
-
-# target to build an object file
-components/algorithm/user_lib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/user_lib.c.obj
-.PHONY : components/algorithm/user_lib.c.obj
-
-components/algorithm/user_lib.i: components/algorithm/user_lib.c.i
-.PHONY : components/algorithm/user_lib.i
-
-# target to preprocess a source file
-components/algorithm/user_lib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/user_lib.c.i
-.PHONY : components/algorithm/user_lib.c.i
-
-components/algorithm/user_lib.s: components/algorithm/user_lib.c.s
-.PHONY : components/algorithm/user_lib.s
-
-# target to generate assembly for a file
-components/algorithm/user_lib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/algorithm/user_lib.c.s
-.PHONY : components/algorithm/user_lib.c.s
-
 components/devices/BMI088Middleware.obj: components/devices/BMI088Middleware.c.obj
 .PHONY : components/devices/BMI088Middleware.obj
 
@@ -1855,30 +1807,6 @@ components/devices/BMI088driver.s: components/devices/BMI088driver.c.s
 components/devices/BMI088driver.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/BMI088driver.c.s
 .PHONY : components/devices/BMI088driver.c.s
-
-components/devices/OLED.obj: components/devices/OLED.c.obj
-.PHONY : components/devices/OLED.obj
-
-# target to build an object file
-components/devices/OLED.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/OLED.c.obj
-.PHONY : components/devices/OLED.c.obj
-
-components/devices/OLED.i: components/devices/OLED.c.i
-.PHONY : components/devices/OLED.i
-
-# target to preprocess a source file
-components/devices/OLED.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/OLED.c.i
-.PHONY : components/devices/OLED.c.i
-
-components/devices/OLED.s: components/devices/OLED.c.s
-.PHONY : components/devices/OLED.s
-
-# target to generate assembly for a file
-components/devices/OLED.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/devices/OLED.c.s
-.PHONY : components/devices/OLED.c.s
 
 components/devices/ist8310driver.obj: components/devices/ist8310driver.c.obj
 .PHONY : components/devices/ist8310driver.obj
@@ -2072,30 +2000,6 @@ hardware/bsp_can.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_can.c.s
 .PHONY : hardware/bsp_can.c.s
 
-hardware/bsp_crc32.obj: hardware/bsp_crc32.c.obj
-.PHONY : hardware/bsp_crc32.obj
-
-# target to build an object file
-hardware/bsp_crc32.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_crc32.c.obj
-.PHONY : hardware/bsp_crc32.c.obj
-
-hardware/bsp_crc32.i: hardware/bsp_crc32.c.i
-.PHONY : hardware/bsp_crc32.i
-
-# target to preprocess a source file
-hardware/bsp_crc32.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_crc32.c.i
-.PHONY : hardware/bsp_crc32.c.i
-
-hardware/bsp_crc32.s: hardware/bsp_crc32.c.s
-.PHONY : hardware/bsp_crc32.s
-
-# target to generate assembly for a file
-hardware/bsp_crc32.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_crc32.c.s
-.PHONY : hardware/bsp_crc32.c.s
-
 hardware/bsp_delay.obj: hardware/bsp_delay.c.obj
 .PHONY : hardware/bsp_delay.obj
 
@@ -2119,30 +2023,6 @@ hardware/bsp_delay.s: hardware/bsp_delay.c.s
 hardware/bsp_delay.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_delay.c.s
 .PHONY : hardware/bsp_delay.c.s
-
-hardware/bsp_flash.obj: hardware/bsp_flash.c.obj
-.PHONY : hardware/bsp_flash.obj
-
-# target to build an object file
-hardware/bsp_flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_flash.c.obj
-.PHONY : hardware/bsp_flash.c.obj
-
-hardware/bsp_flash.i: hardware/bsp_flash.c.i
-.PHONY : hardware/bsp_flash.i
-
-# target to preprocess a source file
-hardware/bsp_flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_flash.c.i
-.PHONY : hardware/bsp_flash.c.i
-
-hardware/bsp_flash.s: hardware/bsp_flash.c.s
-.PHONY : hardware/bsp_flash.s
-
-# target to generate assembly for a file
-hardware/bsp_flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_flash.c.s
-.PHONY : hardware/bsp_flash.c.s
 
 hardware/bsp_fric.obj: hardware/bsp_fric.c.obj
 .PHONY : hardware/bsp_fric.obj
@@ -2240,30 +2120,6 @@ hardware/bsp_laser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_laser.c.s
 .PHONY : hardware/bsp_laser.c.s
 
-hardware/bsp_led.obj: hardware/bsp_led.c.obj
-.PHONY : hardware/bsp_led.obj
-
-# target to build an object file
-hardware/bsp_led.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_led.c.obj
-.PHONY : hardware/bsp_led.c.obj
-
-hardware/bsp_led.i: hardware/bsp_led.c.i
-.PHONY : hardware/bsp_led.i
-
-# target to preprocess a source file
-hardware/bsp_led.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_led.c.i
-.PHONY : hardware/bsp_led.c.i
-
-hardware/bsp_led.s: hardware/bsp_led.c.s
-.PHONY : hardware/bsp_led.s
-
-# target to generate assembly for a file
-hardware/bsp_led.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_led.c.s
-.PHONY : hardware/bsp_led.c.s
-
 hardware/bsp_rc.obj: hardware/bsp_rc.c.obj
 .PHONY : hardware/bsp_rc.obj
 
@@ -2288,30 +2144,6 @@ hardware/bsp_rc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rc.c.s
 .PHONY : hardware/bsp_rc.c.s
 
-hardware/bsp_rng.obj: hardware/bsp_rng.c.obj
-.PHONY : hardware/bsp_rng.obj
-
-# target to build an object file
-hardware/bsp_rng.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rng.c.obj
-.PHONY : hardware/bsp_rng.c.obj
-
-hardware/bsp_rng.i: hardware/bsp_rng.c.i
-.PHONY : hardware/bsp_rng.i
-
-# target to preprocess a source file
-hardware/bsp_rng.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rng.c.i
-.PHONY : hardware/bsp_rng.c.i
-
-hardware/bsp_rng.s: hardware/bsp_rng.c.s
-.PHONY : hardware/bsp_rng.s
-
-# target to generate assembly for a file
-hardware/bsp_rng.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_rng.c.s
-.PHONY : hardware/bsp_rng.c.s
-
 hardware/bsp_servo_pwm.obj: hardware/bsp_servo_pwm.c.obj
 .PHONY : hardware/bsp_servo_pwm.obj
 
@@ -2335,30 +2167,6 @@ hardware/bsp_servo_pwm.s: hardware/bsp_servo_pwm.c.s
 hardware/bsp_servo_pwm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_servo_pwm.c.s
 .PHONY : hardware/bsp_servo_pwm.c.s
-
-hardware/bsp_spi.obj: hardware/bsp_spi.c.obj
-.PHONY : hardware/bsp_spi.obj
-
-# target to build an object file
-hardware/bsp_spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_spi.c.obj
-.PHONY : hardware/bsp_spi.c.obj
-
-hardware/bsp_spi.i: hardware/bsp_spi.c.i
-.PHONY : hardware/bsp_spi.i
-
-# target to preprocess a source file
-hardware/bsp_spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_spi.c.i
-.PHONY : hardware/bsp_spi.c.i
-
-hardware/bsp_spi.s: hardware/bsp_spi.c.s
-.PHONY : hardware/bsp_spi.s
-
-# target to generate assembly for a file
-hardware/bsp_spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_spi.c.s
-.PHONY : hardware/bsp_spi.c.s
 
 hardware/bsp_usart.obj: hardware/bsp_usart.c.obj
 .PHONY : hardware/bsp_usart.obj
@@ -2893,21 +2701,12 @@ help:
 	@echo ... Src/usbd_desc.obj
 	@echo ... Src/usbd_desc.i
 	@echo ... Src/usbd_desc.s
-	@echo ... components/algorithm/AHRS_middleware.obj
-	@echo ... components/algorithm/AHRS_middleware.i
-	@echo ... components/algorithm/AHRS_middleware.s
-	@echo ... components/algorithm/user_lib.obj
-	@echo ... components/algorithm/user_lib.i
-	@echo ... components/algorithm/user_lib.s
 	@echo ... components/devices/BMI088Middleware.obj
 	@echo ... components/devices/BMI088Middleware.i
 	@echo ... components/devices/BMI088Middleware.s
 	@echo ... components/devices/BMI088driver.obj
 	@echo ... components/devices/BMI088driver.i
 	@echo ... components/devices/BMI088driver.s
-	@echo ... components/devices/OLED.obj
-	@echo ... components/devices/OLED.i
-	@echo ... components/devices/OLED.s
 	@echo ... components/devices/ist8310driver.obj
 	@echo ... components/devices/ist8310driver.i
 	@echo ... components/devices/ist8310driver.s
@@ -2932,15 +2731,9 @@ help:
 	@echo ... hardware/bsp_can.obj
 	@echo ... hardware/bsp_can.i
 	@echo ... hardware/bsp_can.s
-	@echo ... hardware/bsp_crc32.obj
-	@echo ... hardware/bsp_crc32.i
-	@echo ... hardware/bsp_crc32.s
 	@echo ... hardware/bsp_delay.obj
 	@echo ... hardware/bsp_delay.i
 	@echo ... hardware/bsp_delay.s
-	@echo ... hardware/bsp_flash.obj
-	@echo ... hardware/bsp_flash.i
-	@echo ... hardware/bsp_flash.s
 	@echo ... hardware/bsp_fric.obj
 	@echo ... hardware/bsp_fric.i
 	@echo ... hardware/bsp_fric.s
@@ -2953,21 +2746,12 @@ help:
 	@echo ... hardware/bsp_laser.obj
 	@echo ... hardware/bsp_laser.i
 	@echo ... hardware/bsp_laser.s
-	@echo ... hardware/bsp_led.obj
-	@echo ... hardware/bsp_led.i
-	@echo ... hardware/bsp_led.s
 	@echo ... hardware/bsp_rc.obj
 	@echo ... hardware/bsp_rc.i
 	@echo ... hardware/bsp_rc.s
-	@echo ... hardware/bsp_rng.obj
-	@echo ... hardware/bsp_rng.i
-	@echo ... hardware/bsp_rng.s
 	@echo ... hardware/bsp_servo_pwm.obj
 	@echo ... hardware/bsp_servo_pwm.i
 	@echo ... hardware/bsp_servo_pwm.s
-	@echo ... hardware/bsp_spi.obj
-	@echo ... hardware/bsp_spi.i
-	@echo ... hardware/bsp_spi.s
 	@echo ... hardware/bsp_usart.obj
 	@echo ... hardware/bsp_usart.i
 	@echo ... hardware/bsp_usart.s

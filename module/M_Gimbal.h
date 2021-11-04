@@ -190,7 +190,7 @@ typedef struct
 
 class M_Gimbal{
 public:
-    const RC_ctrl_t *gimbal_rc_ctrl;
+    const RC_ctrl_t *Rc;
     const motor_measure *gimbal_motor_measure;
     const fp32 *gimbal_INT_angle_point;                             //获取陀螺仪角度值
     const fp32 *gimbal_INT_gyro_point;                              //获取陀螺仪角速度值
@@ -200,7 +200,7 @@ public:
     motor_3508 RIGHT_FRIC;                                          //右摩擦轮电机
     gimbal_motor_mode_e gimbal_motor_mode;                          //云台控制状态机
     gimbal_motor_mode_e last_gimbal_motor_mode;                     //云台上次控制状态机
-    gimbal_behaviour_e gimbal_behaviour_mode = GIMBAL_ZERO_FORCE;   //云台行为模式
+    gimbal_behaviour_e gimbal_behaviour = GIMBAL_ZERO_FORCE;        //云台行为模式
 
     pid gimbal_speed_pid[2];                                        //云台电机速度pid
     pid gimbal_angle_pid[2];                                        //云台电机角度pid
@@ -220,10 +220,14 @@ public:
     uint8_t step;
 
 
-    void init(M_Gimbal *init);                                      //云台初始化
+    void init();                                                    //云台初始化
+    void set_mode();                                                //设置云台控制模式
+    void behavour_set();                                            //设置云台行为状态机
+    void feedback_update();                                         //更新云台电机数据
+    void behaviour_mode_set();                                      //云台行为状态机及电机状态机设置
+
     static void PID_clear(pid *gimbal_pid_clear);                   //清除pid
-    static void gimbal_total_pid_clear(M_Gimbal *pid_clear);        //清除所有pid
-    static void gimbal_feedback_update(M_Gimbal *feedback_update);  //更新数据
+
     static fp32 motor_ecd_to_angle_change(uint16_t ecd, uint16_t offset_ecd);
 };
 

@@ -10,8 +10,7 @@
   * @note       
   * @history
   *  Version    Date            Author          Modification
-  *  V1.0.0     Dec-26-2018     RM              1. done
-  *  V2.0.0     Nov-11-2019     RM              1. support bmi088, but don't support mpu6500
+  *  V1.0.0     NOV-04-2021     summerpray       1. doing
   *
   @verbatim
   ==============================================================================
@@ -28,10 +27,9 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "bsp_imu_pwm.h"
-#include "bsp_spi.h"
+//#include "bsp_spi.h"
 #include "bmi088driver.h"
 #include "ist8310driver.h"
-#include "ahrs.h"
 
 #define SPI_DMA_GYRO_LENGHT       8
 #define SPI_DMA_ACCEL_LENGHT      9

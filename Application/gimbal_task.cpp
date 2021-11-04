@@ -50,8 +50,9 @@
 
 void gimbal_task(void *pvParameters){
     vTaskDelay(GIMBAL_TASK_INIT_TIME);
-    M_Gimbal gimbal;
-    gimbal.init(&gimbal);
+    M_Gimbal GIMBAL;
+    GIMBAL.init();
+    GIMBAL.feedback_update();
     while(1){
         ;
     }

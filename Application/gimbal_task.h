@@ -53,12 +53,4 @@
 extern void gimbal_task(void *pvParameters);
 
 
-class gimbal_motor{
-
-};
-
-
-
-
-
 #endif //GIMBAL_BOARD_GIMBAL_TASK_H
