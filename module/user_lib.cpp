@@ -36,3 +36,9 @@ fp32 fp32_constrain(fp32 Value, fp32 minValue, fp32 maxValue) {
         return
                 Value;
 }
+
+void abs_limit(fp32 Value, fp32 MaxValue){
+    if (Value > MaxValue){
+        Value = MaxValue;
+    }
+}

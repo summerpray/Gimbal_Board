@@ -16,7 +16,9 @@
 #include "user_lib.h"
 #include "Communication_task.h"
 #include <cmath>
+#include <math.h>
 #include "INS_task.h"
+#include "user_lib.h"
 
 
 //pitch speed close-loop PID params, max out and max iout
@@ -168,25 +170,6 @@ typedef enum
     GIMBAL_MOTIONLESS,
 } gimbal_behaviour_e;
 
-typedef struct
-{
-    fp32 kp;
-    fp32 ki;
-    fp32 kd;
-
-    fp32 set;
-    fp32 get;
-    fp32 err;
-
-    fp32 max_out;
-    fp32 max_iout;
-
-    fp32 Pout;
-    fp32 Iout;
-    fp32 Dout;
-
-    fp32 out;
-} gimbal_PID_t;
 
 class M_Gimbal{
 public:
@@ -219,15 +202,40 @@ public:
     uint16_t min_pitch_ecd;
     uint8_t step;
 
+    //发送的电机电流
+    int16_t yaw_can_set_current = 0;
+    int16_t pitch_can_set_current = 0;
+    int16_t shoot_can_set_current = 0;
 
     void init();                                                    //云台初始化
     void set_mode();                                                //设置云台控制模式
+    void set_control();                                             //设置云台控制量
     void behavour_set();                                            //设置云台行为状态机
-    void feedback_update();                                         //更新云台电机数据
+    void feedback_update();                                         //云台数据反馈
     void behaviour_mode_set();                                      //云台行为状态机及电机状态机设置
+    void gimbal_control_loop();                                     //云台控制PID计算
     void mode_change_control_transit();                             //转换状态保存数据
-    static void PID_clear(pid *gimbal_pid_clear);                   //清除pid
 
+/***************************(C)  MOTOR control *******************************/
+    void absolute_angle_limit(motor_6020 *gimbal_motor, fp32 add);   //陀螺仪模式电机计算
+    void relative_angle_limit(motor_6020 *gimbal_motor, fp32 add);   //编码器模式电机计算
+    void motor_raw_angle_control(motor_6020 *gimbal_motor);          //云台直接电流计算
+    void motor_absolute_angle_control(motor_6020 *gimbal_motor);     //云台陀螺仪模式电流计算
+    void motor_relative_angle_control(motor_6020 *gimbal_motor);     //云台编码器模式电流计算
+/***************************(C)  MOTOR control *******************************/
+
+/***************************(C) GIMBAL control *******************************/
+    void behaviour_control_set(fp32 *add_yaw, fp32 *add_pitch);     //云台行为控制
+    void gimbal_zero_force_control(fp32 *yaw, fp32 *pitch);         //不上电模式
+    void gimbal_init_control(fp32 *yaw, fp32 *pitch);               //初始化模式
+    void gimbal_absolute_angle_control(fp32 *yaw, fp32 *pitch);     //陀螺仪模式
+    void gimbal_relative_angle_control(fp32 *yaw, fp32 *pitch);     //编码器模式
+    void gimbal_motionless_control(fp32 *yaw, fp32 *pitch);         //无输入控制模式
+/***************************(C) GIMBAL control *******************************/
+
+    static void PID_clear(pid *gimbal_pid_clear);                   //清除pid
+    static fp32 gimbal_PID_calc(gimbal_PID_t *pid, fp32 get, fp32 set, fp32 error_delta);
+    static void gimbal_PID_init(gimbal_PID_t *pid, fp32 maxout, fp32 max_iout, fp32 kp, fp32 ki, fp32 kd);
     static fp32 motor_ecd_to_angle_change(uint16_t ecd, uint16_t offset_ecd);
 };
 

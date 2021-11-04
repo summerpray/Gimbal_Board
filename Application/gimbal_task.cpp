@@ -51,10 +51,35 @@
 void gimbal_task(void *pvParameters){
     vTaskDelay(GIMBAL_TASK_INIT_TIME);
     M_Gimbal GIMBAL;
+    //云台初始化
     GIMBAL.init();
+    //云台数据反馈
     GIMBAL.feedback_update();
     while(1){
+        //设置云台状态机
         GIMBAL.set_mode();
+        //云台控制模式切换 控制数据过渡
         GIMBAL.mode_change_control_transit();
+        //云台数据反馈
+        GIMBAL.feedback_update();
+        //设置云台控制量
+        GIMBAL.set_control();
+        //设置PID计算
+        GIMBAL.gimbal_control_loop();
+#if YAW_TURN
+        GIMBAL.yaw_can_set_current = -GIMBAL.gimbal_yaw_motor.given_current;
+#else
+        GIMBAL.yaw_can_set_current = GIMBAL.gimbal_yaw_motor.given_current;
+#endif
+
+#if PITCH_TURN
+        GIMBAL.pitch_can_set_current = -GIMBAL.gimbal_pitch_motor.given_current;
+#else
+        GIMBAL.pitch_can_set_current = GIMBAL.gimbal_pitch_motor.given_current;
+#endif
+
+        GIMBAL.gimbal_can.CAN_cmd_gimbal(GIMBAL.yaw_can_set_current, GIMBAL.pitch_can_set_current, GIMBAL.shoot_can_set_current, GIMBAL.shoot_can_set_current);
+
     }
 }
+

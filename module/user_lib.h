@@ -14,6 +14,6 @@ fp32 loop_fp32_constrain(fp32 Input, fp32 minValue, fp32 maxValue);
 
 //限幅函数
 fp32 fp32_constrain(fp32 Value, fp32 minValue, fp32 maxValue);
-
-
+//最大值限幅函数
+void abs_limit(fp32 Value, fp32 MaxValue);
 #endif //CLASSIS_BOARD_USER_LIB_H
