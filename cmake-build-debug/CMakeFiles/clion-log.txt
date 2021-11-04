@@ -1,5 +1,6 @@
-"E:\clion\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=E:/cubeMX/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=E:/cubeMX/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" C:\Users\worker\CLionProjects\Gimbal_Board
--- Minimal optimization, debug info included
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/summerpray/CLionProjects/Gimbal_Board
+CMake Error at CMakeLists.txt:4 (cmake_minimum_required):
+  CMake 3.20 or higher is required.  You are running version 3.17.5
+
+
+-- Configuring incomplete, errors occurred!

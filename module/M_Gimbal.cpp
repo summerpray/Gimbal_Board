@@ -58,8 +58,8 @@ void M_Gimbal::init() {
     gimbal_pitch_motor.gimbal_motor_measure = gimbal_can.get_gimbal_motor_measure_point(PITCH);
 
     //TODO: 在INS初始化移植完毕后取消注释这里
-    //init->gimbal_INT_angle_point = get_INS_angle_point();
-    //init->gimbal_INT_gyro_point = get_gyro_data_point();
+    //gimbal_INT_angle_point = get_INS_angle_point();
+    //gimbal_INT_gyro_point = get_gyro_data_point();
 
     //遥控器数据指针获取
     Rc = RC.get_remote_control_point();
@@ -117,8 +117,8 @@ void M_Gimbal::feedback_update()
                                                                    gimbal_pitch_motor.offset_ecd);
 #else
 
-    feedback_update->gimbal_pitch_motor.relative_angle = motor_ecd_to_angle_change(feedback_update->gimbal_pitch_motor.gimbal_motor_measure->ecd,
-                                                                                          feedback_update->gimbal_pitch_motor.offset_ecd);
+    gimbal_pitch_motor.relative_angle = motor_ecd_to_angle_change(gimbal_pitch_motor.gimbal_motor_measure->ecd,
+                                                                   gimbal_pitch_motor.offset_ecd);
 #endif
 
     gimbal_pitch_motor.motor_gyro = *(gimbal_INT_gyro_point + INS_GYRO_Y_ADDRESS_OFFSET);
@@ -126,8 +126,8 @@ void M_Gimbal::feedback_update()
     gimbal_yaw_motor.absolute_angle = *(gimbal_INT_angle_point + INS_YAW_ADDRESS_OFFSET);
 
 #if YAW_TURN
-    feedback_update->gimbal_yaw_motor.relative_angle = -motor_ecd_to_angle_change(feedback_update->gimbal_yaw_motor.gimbal_motor_measure->ecd,
-                                                                                        feedback_update->gimbal_yaw_motor.offset_ecd);
+    gimbal_yaw_motor.relative_angle = -motor_ecd_to_angle_change(gimbal_yaw_motor.gimbal_motor_measure->ecd,
+                                                                gimbal_yaw_motor.offset_ecd);
 
 #else
     gimbal_yaw_motor.relative_angle = motor_ecd_to_angle_change(gimbal_yaw_motor.gimbal_motor_measure->ecd,
@@ -266,7 +266,25 @@ fp32 M_Gimbal::motor_ecd_to_angle_change(uint16_t ecd, uint16_t offset_ecd){
     return relative_ecd * MOTOR_ECD_TO_RAD;
 }
 
+void M_Gimbal::mode_change_control_transit(){
 
+    //切换模式数据保存
+    //TODO:思考一下pitch和yaw真的需要分开保存吗
+    if (last_gimbal_motor_mode != GIMBAL_MOTOR_RAW && gimbal_motor_mode == GIMBAL_MOTOR_RAW)
+    {
+        gimbal_yaw_motor.raw_cmd_current = gimbal_yaw_motor.current_set = gimbal_yaw_motor.given_current;
+    }
+    else if (last_gimbal_motor_mode != GIMBAL_MOTOR_GYRO && gimbal_motor_mode == GIMBAL_MOTOR_GYRO)
+    {
+        gimbal_yaw_motor.absolute_angle_set = gimbal_yaw_motor.absolute_angle;
+    }
+    else if (last_gimbal_motor_mode != GIMBAL_MOTOR_ENCONDE && gimbal_motor_mode == GIMBAL_MOTOR_ENCONDE)
+    {
+        gimbal_yaw_motor.relative_angle_set = gimbal_yaw_motor.relative_angle;
+    }
+    last_gimbal_motor_mode = gimbal_motor_mode;
+
+}
 
 
 /*****************************(C) GIMBAL PID *******************************/

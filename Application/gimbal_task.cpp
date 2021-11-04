@@ -46,7 +46,7 @@
   ****************************(C) COPYRIGHT 2021 *******************************
   */
 #include "gimbal_task.h"
-#include "M_Gimbal.h"
+
 
 void gimbal_task(void *pvParameters){
     vTaskDelay(GIMBAL_TASK_INIT_TIME);
@@ -54,6 +54,7 @@ void gimbal_task(void *pvParameters){
     GIMBAL.init();
     GIMBAL.feedback_update();
     while(1){
-        ;
+        GIMBAL.set_mode();
+        GIMBAL.mode_change_control_transit();
     }
 }

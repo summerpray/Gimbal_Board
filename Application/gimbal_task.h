@@ -50,6 +50,7 @@
 #include "cmsis_os.h"
 #include "System_Config.h"
 #include "INS_task.h"
+#include "M_Gimbal.h"
 extern void gimbal_task(void *pvParameters);
 
 

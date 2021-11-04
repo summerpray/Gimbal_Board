@@ -204,7 +204,7 @@ public:
 
     pid gimbal_speed_pid[2];                                        //云台电机速度pid
     pid gimbal_angle_pid[2];                                        //云台电机角度pid
-    CAN_Gimbal gimbal_can;                                         //接收云台can数据
+    CAN_Gimbal gimbal_can;                                          //接收云台can数据
 
     first_order_filter gimbal_cmd_slow_set_vx;                      //使用一阶低通滤波减缓设定值
     first_order_filter gimbal_cmd_slow_set_vy;                      //使用一阶低通滤波减缓设定值
@@ -225,7 +225,7 @@ public:
     void behavour_set();                                            //设置云台行为状态机
     void feedback_update();                                         //更新云台电机数据
     void behaviour_mode_set();                                      //云台行为状态机及电机状态机设置
-
+    void mode_change_control_transit();                             //转换状态保存数据
     static void PID_clear(pid *gimbal_pid_clear);                   //清除pid
 
     static fp32 motor_ecd_to_angle_change(uint16_t ecd, uint16_t offset_ecd);
