@@ -1760,6 +1760,30 @@ Src/usbd_desc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/Src/usbd_desc.c.s
 .PHONY : Src/usbd_desc.c.s
 
+components/Include/AHRS_middleware.obj: components/Include/AHRS_middleware.c.obj
+.PHONY : components/Include/AHRS_middleware.obj
+
+# target to build an object file
+components/Include/AHRS_middleware.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/Include/AHRS_middleware.c.obj
+.PHONY : components/Include/AHRS_middleware.c.obj
+
+components/Include/AHRS_middleware.i: components/Include/AHRS_middleware.c.i
+.PHONY : components/Include/AHRS_middleware.i
+
+# target to preprocess a source file
+components/Include/AHRS_middleware.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/Include/AHRS_middleware.c.i
+.PHONY : components/Include/AHRS_middleware.c.i
+
+components/Include/AHRS_middleware.s: components/Include/AHRS_middleware.c.s
+.PHONY : components/Include/AHRS_middleware.s
+
+# target to generate assembly for a file
+components/Include/AHRS_middleware.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/components/Include/AHRS_middleware.c.s
+.PHONY : components/Include/AHRS_middleware.c.s
+
 components/devices/BMI088Middleware.obj: components/devices/BMI088Middleware.c.obj
 .PHONY : components/devices/BMI088Middleware.obj
 
@@ -2167,6 +2191,30 @@ hardware/bsp_servo_pwm.s: hardware/bsp_servo_pwm.c.s
 hardware/bsp_servo_pwm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_servo_pwm.c.s
 .PHONY : hardware/bsp_servo_pwm.c.s
+
+hardware/bsp_spi.obj: hardware/bsp_spi.c.obj
+.PHONY : hardware/bsp_spi.obj
+
+# target to build an object file
+hardware/bsp_spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_spi.c.obj
+.PHONY : hardware/bsp_spi.c.obj
+
+hardware/bsp_spi.i: hardware/bsp_spi.c.i
+.PHONY : hardware/bsp_spi.i
+
+# target to preprocess a source file
+hardware/bsp_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_spi.c.i
+.PHONY : hardware/bsp_spi.c.i
+
+hardware/bsp_spi.s: hardware/bsp_spi.c.s
+.PHONY : hardware/bsp_spi.s
+
+# target to generate assembly for a file
+hardware/bsp_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Gimbal_Board.elf.dir\build.make CMakeFiles/Gimbal_Board.elf.dir/hardware/bsp_spi.c.s
+.PHONY : hardware/bsp_spi.c.s
 
 hardware/bsp_usart.obj: hardware/bsp_usart.c.obj
 .PHONY : hardware/bsp_usart.obj
@@ -2701,6 +2749,9 @@ help:
 	@echo ... Src/usbd_desc.obj
 	@echo ... Src/usbd_desc.i
 	@echo ... Src/usbd_desc.s
+	@echo ... components/Include/AHRS_middleware.obj
+	@echo ... components/Include/AHRS_middleware.i
+	@echo ... components/Include/AHRS_middleware.s
 	@echo ... components/devices/BMI088Middleware.obj
 	@echo ... components/devices/BMI088Middleware.i
 	@echo ... components/devices/BMI088Middleware.s
@@ -2752,6 +2803,9 @@ help:
 	@echo ... hardware/bsp_servo_pwm.obj
 	@echo ... hardware/bsp_servo_pwm.i
 	@echo ... hardware/bsp_servo_pwm.s
+	@echo ... hardware/bsp_spi.obj
+	@echo ... hardware/bsp_spi.i
+	@echo ... hardware/bsp_spi.s
 	@echo ... hardware/bsp_usart.obj
 	@echo ... hardware/bsp_usart.i
 	@echo ... hardware/bsp_usart.s

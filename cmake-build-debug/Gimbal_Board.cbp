@@ -44,6 +44,7 @@
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/hardware"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/support"/>
+					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/Include"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward"/>
@@ -85,6 +86,7 @@
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/hardware"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices"/>
 					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/support"/>
+					<Add directory="C:/Users/worker/CLionProjects/Gimbal_Board/components/Include"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi"/>
 					<Add directory="e:\cubemx\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward"/>
@@ -579,6 +581,30 @@
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Src/usbd_desc.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/Include/AHRS.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/Include/AHRS.lib">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/Include/AHRS_middleware.c">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/Include/AHRS_middleware.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/Include/arm_common_tables.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/Include/arm_const_structs.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/Include/core_sc000.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/Include/core_sc300.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/BMI088Middleware.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
@@ -688,6 +714,12 @@
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_servo_pwm.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_spi.c">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_spi.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_usart.c">

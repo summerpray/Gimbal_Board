@@ -22,14 +22,15 @@
 
 #ifndef INS_Task_H
 #define INS_Task_H
-#include "struct_typedef.h"
 #include "pid.h"
 #include "main.h"
 #include "cmsis_os.h"
 #include "bsp_imu_pwm.h"
-//#include "bsp_spi.h"
+#include <cstring>
+#include "bsp_spi.h"
 #include "bmi088driver.h"
 #include "ist8310driver.h"
+#include "ahrs.h"
 
 #define SPI_DMA_GYRO_LENGHT       8
 #define SPI_DMA_ACCEL_LENGHT      9
@@ -77,17 +78,81 @@
 #define INS_MAG_Y_ADDRESS_OFFSET 1
 #define INS_MAG_Z_ADDRESS_OFFSET 2
 
-/**
-  * @brief          imu task, init bmi088, ist8310, calculate the euler angle
-  * @param[in]      pvParameters: NULL
-  * @retval         none
-  */
-/**
-  * @brief          imu任务, 初始化 bmi088, ist8310, 计算欧拉角
-  * @param[in]      pvParameters: NULL
-  * @retval         none
-  */
-extern void INS_task(void const *pvParameters);
+#define IMU_temp_PWM(pwm)  imu_pwm_set(pwm)                    //pwm给定
+
+#define BMI088_BOARD_INSTALL_SPIN_MATRIX    \
+    {0.0f, 1.0f, 0.0f},                     \
+    {-1.0f, 0.0f, 0.0f},                     \
+    {0.0f, 0.0f, 1.0f}                      \
+
+
+#define IST8310_BOARD_INSTALL_SPIN_MATRIX   \
+    {1.0f, 0.0f, 0.0f},                     \
+    {0.0f, 1.0f, 0.0f},                     \
+    {0.0f, 0.0f, 1.0f}                      \
+
+class INS{
+public:
+    INS();
+    ~INS();
+/*******************************************(C) 陀螺仪基本参数 ***********************************************/
+    bmi088_real_data_t bmi088_real_data;                            //IMU数据存储
+    ist8310_real_data_t ist8310_real_data;                          //磁力计数据存储
+    fp32 INS_gyro[3];
+    fp32 INS_accel[3];
+    fp32 INS_mag[3];
+    fp32 INS_quat[4];
+    fp32 INS_angle[3];                                              //euler angle, unit rad.欧拉角 单位 rad
+
+    //加速度计低通滤波
+    fp32 accel_fliter_1[3];
+    fp32 accel_fliter_2[3];
+    fp32 accel_fliter_3[3];
+    const fp32 fliter_num[3] = {1.929454039488895f, -0.93178349823448126f, 0.002329458745586203f};
+/*******************************************(C) 陀螺仪基本参数 ***********************************************/
+
+/*******************************************(C) 串行外设接口 ************************************************/
+    static TaskHandle_t INS_task_local_handler;                     //任务句柄
+    SPI_HandleTypeDef hspi1;                                        //串行外设接口
+/*******************************************(C) 串行外设接口 ************************************************/
+
+/*******************************************(C) 陀螺仪返回参数 ***********************************************/
+    const fp32 *get_INS_quat_point(void);                                 //获取四元数
+    const fp32 *get_INS_angle_point(void);                                //获取欧拉角,0:yaw, 1:pitch, 2:roll 单位 rad
+    const fp32 *get_gyro_data_point(void);                                //获取角速度,0:x轴, 1:y轴, 2:roll轴 单位 rad/s
+    const fp32 *get_accel_data_point(void);                               //获取加速度,0:x轴, 1:y轴, 2:roll轴 单位 m/s2
+/*******************************************(C) 陀螺仪返回参数 ***********************************************/
+
+/**********************************************(C) 标志位 **************************************************/
+    volatile uint8_t gyro_update_flag;
+    volatile uint8_t accel_update_flag;
+    volatile uint8_t accel_temp_update_flag;
+    volatile uint8_t mag_update_flag;
+    volatile uint8_t imu_start_dma_flag;                            //IMU读取数据标志位
+/**********************************************(C) 标志位 **************************************************/
+
+/************************************(C) 陀螺仪、加速度DMA读取交互变量 ****************************************/
+    uint8_t gyro_dma_rx_buf[SPI_DMA_GYRO_LENGHT];
+    uint8_t gyro_dma_tx_buf[SPI_DMA_GYRO_LENGHT] = {0x82,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF};
+
+    uint8_t accel_dma_rx_buf[SPI_DMA_ACCEL_LENGHT];
+    uint8_t accel_dma_tx_buf[SPI_DMA_ACCEL_LENGHT] = {0x92,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF};
+
+    uint8_t accel_temp_dma_rx_buf[SPI_DMA_ACCEL_TEMP_LENGHT];
+    uint8_t accel_temp_dma_tx_buf[SPI_DMA_ACCEL_TEMP_LENGHT] = {0xA2,0xFF,0xFF,0xFF};
+/************************************(C) 陀螺仪、加速度DMA读取交互变量 ****************************************/
+/*************************************************(C) PID *************************************************/
+    const fp32 imu_temp_PID[3] = {TEMPERATURE_PID_KP, TEMPERATURE_PID_KI, TEMPERATURE_PID_KD};
+    pid imu_temp_pid;                                               //陀螺仪临时PID
+/*************************************************(C) PID *************************************************/
+    const float timing_time = 0.001f;                               //tast run time , unit s.任务运行的时间 单位 s
+    void imu_cali_slove(fp32 gyro[3], fp32 accel[3], fp32 mag[3],bmi088_real_data_t *bmi088, ist8310_real_data_t *ist8310);
+
+    void INS_task(void const *pvParameters);                        //陀螺仪任务
+
+};
+
+
 
 /**
   * @brief          calculate gyro zero drift
