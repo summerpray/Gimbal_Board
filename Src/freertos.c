@@ -23,6 +23,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "System_Config.h"
+#include "INS_task.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -46,7 +47,7 @@
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
 osThreadId startTaskHandle;
-osThreadId gimbalTaskHandle;
+osThreadId imuTaskHandle;
 /* USER CODE END Variables */
 
 
@@ -124,6 +125,9 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_THREADS */
   osThreadDef(startTask, start_task, osPriorityNormal, 0, 128);
   startTaskHandle = osThreadCreate(osThread(startTask), NULL);
+
+  osThreadDef(imuTask, INS_task, osPriorityRealtime, 0, 1024);
+  imuTaskHandle = osThreadCreate(osThread(imuTask), NULL);
 
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */

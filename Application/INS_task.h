@@ -1,36 +1,12 @@
-/**
-  ****************************(C) COPYRIGHT 2019 DJI****************************
-  * @file       INS_task.c/h
-  * @brief      use bmi088 to calculate the euler angle. no use ist8310, so only
-  *             enable data ready pin to save cpu time.enalbe bmi088 data ready
-  *             enable spi DMA to save the time spi transmit
-  *             Ö÷ÒªÀûÓÃÍÓÂİÒÇbmi088£¬´ÅÁ¦¼Æist8310£¬Íê³É×ËÌ¬½âËã£¬µÃ³öÅ·À­½Ç£¬
-  *             Ìá¹©Í¨¹ıbmi088µÄdata ready ÖĞ¶ÏÍê³ÉÍâ²¿´¥·¢£¬¼õÉÙÊı¾İµÈ´ıÑÓ³Ù
-  *             Í¨¹ıDMAµÄSPI´«Êä½ÚÔ¼CPUÊ±¼ä.
-  * @note       
-  * @history
-  *  Version    Date            Author          Modification
-  *  V1.0.0     NOV-04-2021     summerpray       1. doing
-  *
-  @verbatim
-  ==============================================================================
+//
+// Created by worker on 2021/11/11.
+//
 
-  ==============================================================================
-  @endverbatim
-  ****************************(C) COPYRIGHT 2019 DJI****************************
-  */
+#ifndef GIMBAL_BOARD_INS_TASK_H
+#define GIMBAL_BOARD_INS_TASK_H
 
-#ifndef INS_Task_H
-#define INS_Task_H
-#include "pid.h"
-#include "main.h"
-#include "cmsis_os.h"
-#include "bsp_imu_pwm.h"
-#include <cstring>
-#include "bsp_spi.h"
-#include "bmi088driver.h"
-#include "ist8310driver.h"
-#include "ahrs.h"
+#include "struct_typedef.h"
+
 
 #define SPI_DMA_GYRO_LENGHT       8
 #define SPI_DMA_ACCEL_LENGHT      9
@@ -46,21 +22,21 @@
 #define BMI088_GYRO_RX_BUF_DATA_OFFSET  1
 #define BMI088_ACCEL_RX_BUF_DATA_OFFSET 2
 
-//ist83100Ô­Ê¼Êı¾İÔÚ»º³åÇøbufµÄÎ»ÖÃ
+//ist83100åŸå§‹æ•°æ®åœ¨ç¼“å†²åŒºbufçš„ä½ç½®
 #define IST8310_RX_BUF_DATA_OFFSET 16
 
 
-#define TEMPERATURE_PID_KP 1600.0f //ÎÂ¶È¿ØÖÆPIDµÄkp
-#define TEMPERATURE_PID_KI 0.2f    //ÎÂ¶È¿ØÖÆPIDµÄki
-#define TEMPERATURE_PID_KD 0.0f    //ÎÂ¶È¿ØÖÆPIDµÄkd
+#define TEMPERATURE_PID_KP 1600.0f //æ¸©åº¦æ§åˆ¶PIDçš„kp
+#define TEMPERATURE_PID_KI 0.2f    //æ¸©åº¦æ§åˆ¶PIDçš„ki
+#define TEMPERATURE_PID_KD 0.0f    //æ¸©åº¦æ§åˆ¶PIDçš„kd
 
-#define TEMPERATURE_PID_MAX_OUT   4500.0f //ÎÂ¶È¿ØÖÆPIDµÄmax_out
-#define TEMPERATURE_PID_MAX_IOUT 4400.0f  //ÎÂ¶È¿ØÖÆPIDµÄmax_iout
+#define TEMPERATURE_PID_MAX_OUT   4500.0f //æ¸©åº¦æ§åˆ¶PIDçš„max_out
+#define TEMPERATURE_PID_MAX_IOUT 4400.0f  //æ¸©åº¦æ§åˆ¶PIDçš„max_iout
 
-#define MPU6500_TEMP_PWM_MAX 5000 //mpu6500¿ØÖÆÎÂ¶ÈµÄÉèÖÃTIMµÄÖØÔØÖµ£¬¼´¸øPWM×î´óÎª MPU6500_TEMP_PWM_MAX - 1
+#define MPU6500_TEMP_PWM_MAX 5000 //mpu6500æ§åˆ¶æ¸©åº¦çš„è®¾ç½®TIMçš„é‡è½½å€¼ï¼Œå³ç»™PWMæœ€å¤§ä¸º MPU6500_TEMP_PWM_MAX - 1
 
 
-#define INS_TASK_INIT_TIME 7 //ÈÎÎñ¿ªÊ¼³õÆÚ delay Ò»¶ÎÊ±¼ä
+#define INS_TASK_INIT_TIME 7 //ä»»åŠ¡å¼€å§‹åˆæœŸ delay ä¸€æ®µæ—¶é—´
 
 #define INS_YAW_ADDRESS_OFFSET    0
 #define INS_PITCH_ADDRESS_OFFSET  1
@@ -78,94 +54,30 @@
 #define INS_MAG_Y_ADDRESS_OFFSET 1
 #define INS_MAG_Z_ADDRESS_OFFSET 2
 
-#define IMU_temp_PWM(pwm)  imu_pwm_set(pwm)                    //pwm¸ø¶¨
-
-#define BMI088_BOARD_INSTALL_SPIN_MATRIX    \
-    {0.0f, 1.0f, 0.0f},                     \
-    {-1.0f, 0.0f, 0.0f},                     \
-    {0.0f, 0.0f, 1.0f}                      \
-
-
-#define IST8310_BOARD_INSTALL_SPIN_MATRIX   \
-    {1.0f, 0.0f, 0.0f},                     \
-    {0.0f, 1.0f, 0.0f},                     \
-    {0.0f, 0.0f, 1.0f}                      \
-
-class INS{
-public:
-    INS();
-    ~INS();
-/*******************************************(C) ÍÓÂİÒÇ»ù±¾²ÎÊı ***********************************************/
-    bmi088_real_data_t bmi088_real_data;                            //IMUÊı¾İ´æ´¢
-    ist8310_real_data_t ist8310_real_data;                          //´ÅÁ¦¼ÆÊı¾İ´æ´¢
-    fp32 INS_gyro[3];
-    fp32 INS_accel[3];
-    fp32 INS_mag[3];
-    fp32 INS_quat[4];
-    fp32 INS_angle[3];                                              //euler angle, unit rad.Å·À­½Ç µ¥Î» rad
-
-    //¼ÓËÙ¶È¼ÆµÍÍ¨ÂË²¨
-    fp32 accel_fliter_1[3];
-    fp32 accel_fliter_2[3];
-    fp32 accel_fliter_3[3];
-    const fp32 fliter_num[3] = {1.929454039488895f, -0.93178349823448126f, 0.002329458745586203f};
-/*******************************************(C) ÍÓÂİÒÇ»ù±¾²ÎÊı ***********************************************/
-
-/*******************************************(C) ´®ĞĞÍâÉè½Ó¿Ú ************************************************/
-    static TaskHandle_t INS_task_local_handler;                     //ÈÎÎñ¾ä±ú
-    SPI_HandleTypeDef hspi1;                                        //´®ĞĞÍâÉè½Ó¿Ú
-/*******************************************(C) ´®ĞĞÍâÉè½Ó¿Ú ************************************************/
-
-/*******************************************(C) ÍÓÂİÒÇ·µ»Ø²ÎÊı ***********************************************/
-    const fp32 *get_INS_quat_point(void);                                 //»ñÈ¡ËÄÔªÊı
-    const fp32 *get_INS_angle_point(void);                                //»ñÈ¡Å·À­½Ç,0:yaw, 1:pitch, 2:roll µ¥Î» rad
-    const fp32 *get_gyro_data_point(void);                                //»ñÈ¡½ÇËÙ¶È,0:xÖá, 1:yÖá, 2:rollÖá µ¥Î» rad/s
-    const fp32 *get_accel_data_point(void);                               //»ñÈ¡¼ÓËÙ¶È,0:xÖá, 1:yÖá, 2:rollÖá µ¥Î» m/s2
-/*******************************************(C) ÍÓÂİÒÇ·µ»Ø²ÎÊı ***********************************************/
-
-/**********************************************(C) ±êÖ¾Î» **************************************************/
-    volatile uint8_t gyro_update_flag;
-    volatile uint8_t accel_update_flag;
-    volatile uint8_t accel_temp_update_flag;
-    volatile uint8_t mag_update_flag;
-    volatile uint8_t imu_start_dma_flag;                            //IMU¶ÁÈ¡Êı¾İ±êÖ¾Î»
-/**********************************************(C) ±êÖ¾Î» **************************************************/
-
-/************************************(C) ÍÓÂİÒÇ¡¢¼ÓËÙ¶ÈDMA¶ÁÈ¡½»»¥±äÁ¿ ****************************************/
-    uint8_t gyro_dma_rx_buf[SPI_DMA_GYRO_LENGHT];
-    uint8_t gyro_dma_tx_buf[SPI_DMA_GYRO_LENGHT] = {0x82,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF};
-
-    uint8_t accel_dma_rx_buf[SPI_DMA_ACCEL_LENGHT];
-    uint8_t accel_dma_tx_buf[SPI_DMA_ACCEL_LENGHT] = {0x92,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF};
-
-    uint8_t accel_temp_dma_rx_buf[SPI_DMA_ACCEL_TEMP_LENGHT];
-    uint8_t accel_temp_dma_tx_buf[SPI_DMA_ACCEL_TEMP_LENGHT] = {0xA2,0xFF,0xFF,0xFF};
-/************************************(C) ÍÓÂİÒÇ¡¢¼ÓËÙ¶ÈDMA¶ÁÈ¡½»»¥±äÁ¿ ****************************************/
-/*************************************************(C) PID *************************************************/
-    const fp32 imu_temp_PID[3] = {TEMPERATURE_PID_KP, TEMPERATURE_PID_KI, TEMPERATURE_PID_KD};
-    pid imu_temp_pid;                                               //ÍÓÂİÒÇÁÙÊ±PID
-/*************************************************(C) PID *************************************************/
-    const float timing_time = 0.001f;                               //tast run time , unit s.ÈÎÎñÔËĞĞµÄÊ±¼ä µ¥Î» s
-    void imu_cali_slove(fp32 gyro[3], fp32 accel[3], fp32 mag[3],bmi088_real_data_t *bmi088, ist8310_real_data_t *ist8310);
-
-    void INS_task(void const *pvParameters);                        //ÍÓÂİÒÇÈÎÎñ
-
-};
-
-
+/**
+  * @brief          imu task, init bmi088, ist8310, calculate the euler angle
+  * @param[in]      pvParameters: NULL
+  * @retval         none
+  */
+/**
+  * @brief          imuä»»åŠ¡, åˆå§‹åŒ– bmi088, ist8310, è®¡ç®—æ¬§æ‹‰è§’
+  * @param[in]      pvParameters: NULL
+  * @retval         none
+  */
+extern void INS_task(void const *pvParameters);
 
 /**
   * @brief          calculate gyro zero drift
   * @param[out]     cali_scale:scale, default 1.0
   * @param[out]     cali_offset:zero drift, collect the gyro ouput when in still
-  * @param[out]     time_count: time, when call gyro_offset_calc 
+  * @param[out]     time_count: time, when call gyro_offset_calc
   * @retval         none
   */
 /**
-  * @brief          Ğ£×¼ÍÓÂİÒÇ
-  * @param[out]     ÍÓÂİÒÇµÄ±ÈÀıÒò×Ó£¬1.0fÎªÄ¬ÈÏÖµ£¬²»ĞŞ¸Ä
-  * @param[out]     ÍÓÂİÒÇµÄÁãÆ¯£¬²É¼¯ÍÓÂİÒÇµÄ¾²Ö¹µÄÊä³ö×÷Îªoffset
-  * @param[out]     ÍÓÂİÒÇµÄÊ±¿Ì£¬Ã¿´ÎÔÚgyro_offsetµ÷ÓÃ»á¼Ó1,
+  * @brief          æ ¡å‡†é™€èºä»ª
+  * @param[out]     é™€èºä»ªçš„æ¯”ä¾‹å› å­ï¼Œ1.0fä¸ºé»˜è®¤å€¼ï¼Œä¸ä¿®æ”¹
+  * @param[out]     é™€èºä»ªçš„é›¶æ¼‚ï¼Œé‡‡é›†é™€èºä»ªçš„é™æ­¢çš„è¾“å‡ºä½œä¸ºoffset
+  * @param[out]     é™€èºä»ªçš„æ—¶åˆ»ï¼Œæ¯æ¬¡åœ¨gyro_offsetè°ƒç”¨ä¼šåŠ 1,
   * @retval         none
   */
 extern void INS_cali_gyro(fp32 cali_scale[3], fp32 cali_offset[3], uint16_t *time_count);
@@ -173,13 +85,13 @@ extern void INS_cali_gyro(fp32 cali_scale[3], fp32 cali_offset[3], uint16_t *tim
 /**
   * @brief          get gyro zero drift from flash
   * @param[in]      cali_scale:scale, default 1.0
-  * @param[in]      cali_offset:zero drift, 
+  * @param[in]      cali_offset:zero drift,
   * @retval         none
   */
 /**
-  * @brief          Ğ£×¼ÍÓÂİÒÇÉèÖÃ£¬½«´Óflash»òÕßÆäËûµØ·½´«ÈëĞ£×¼Öµ
-  * @param[in]      ÍÓÂİÒÇµÄ±ÈÀıÒò×Ó£¬1.0fÎªÄ¬ÈÏÖµ£¬²»ĞŞ¸Ä
-  * @param[in]      ÍÓÂİÒÇµÄÁãÆ¯
+  * @brief          æ ¡å‡†é™€èºä»ªè®¾ç½®ï¼Œå°†ä»flashæˆ–è€…å…¶ä»–åœ°æ–¹ä¼ å…¥æ ¡å‡†å€¼
+  * @param[in]      é™€èºä»ªçš„æ¯”ä¾‹å› å­ï¼Œ1.0fä¸ºé»˜è®¤å€¼ï¼Œä¸ä¿®æ”¹
+  * @param[in]      é™€èºä»ªçš„é›¶æ¼‚
   * @retval         none
   */
 extern void INS_set_cali_gyro(fp32 cali_scale[3], fp32 cali_offset[3]);
@@ -190,9 +102,9 @@ extern void INS_set_cali_gyro(fp32 cali_scale[3], fp32 cali_offset[3]);
   * @retval         the point of INS_quat
   */
 /**
-  * @brief          »ñÈ¡ËÄÔªÊı
+  * @brief          è·å–å››å…ƒæ•°
   * @param[in]      none
-  * @retval         INS_quatµÄÖ¸Õë
+  * @retval         INS_quatçš„æŒ‡é’ˆ
   */
 extern const fp32 *get_INS_quat_point(void);
 
@@ -203,9 +115,9 @@ extern const fp32 *get_INS_quat_point(void);
   * @retval         the point of INS_angle
   */
 /**
-  * @brief          »ñÈ¡Å·À­½Ç, 0:yaw, 1:pitch, 2:roll µ¥Î» rad
+  * @brief          è·å–æ¬§æ‹‰è§’, 0:yaw, 1:pitch, 2:roll å•ä½ rad
   * @param[in]      none
-  * @retval         INS_angleµÄÖ¸Õë
+  * @retval         INS_angleçš„æŒ‡é’ˆ
   */
 extern const fp32 *get_INS_angle_point(void);
 
@@ -216,9 +128,9 @@ extern const fp32 *get_INS_angle_point(void);
   * @retval         the point of INS_gyro
   */
 /**
-  * @brief          »ñÈ¡½ÇËÙ¶È,0:xÖá, 1:yÖá, 2:rollÖá µ¥Î» rad/s
+  * @brief          è·å–è§’é€Ÿåº¦,0:xè½´, 1:yè½´, 2:rollè½´ å•ä½ rad/s
   * @param[in]      none
-  * @retval         INS_gyroµÄÖ¸Õë
+  * @retval         INS_gyroçš„æŒ‡é’ˆ
   */
 extern const fp32 *get_gyro_data_point(void);
 
@@ -229,9 +141,9 @@ extern const fp32 *get_gyro_data_point(void);
   * @retval         the point of INS_gyro
   */
 /**
-  * @brief          »ñÈ¡¼ÓËÙ¶È,0:xÖá, 1:yÖá, 2:rollÖá µ¥Î» m/s2
+  * @brief          è·å–åŠ é€Ÿåº¦,0:xè½´, 1:yè½´, 2:rollè½´ å•ä½ m/s2
   * @param[in]      none
-  * @retval         INS_gyroµÄÖ¸Õë
+  * @retval         INS_gyroçš„æŒ‡é’ˆ
   */
 extern const fp32 *get_accel_data_point(void);
 
@@ -241,10 +153,10 @@ extern const fp32 *get_accel_data_point(void);
   * @retval         the point of INS_mag
   */
 /**
-  * @brief          »ñÈ¡¼ÓËÙ¶È,0:xÖá, 1:yÖá, 2:rollÖá µ¥Î» ut
+  * @brief          è·å–åŠ é€Ÿåº¦,0:xè½´, 1:yè½´, 2:rollè½´ å•ä½ ut
   * @param[in]      none
-  * @retval         INS_magµÄÖ¸Õë
+  * @retval         INS_magçš„æŒ‡é’ˆ
   */
 extern const fp32 *get_mag_data_point(void);
 
-#endif
+#endif //GIMBAL_BOARD_INS_TASK_H

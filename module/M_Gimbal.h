@@ -5,9 +5,19 @@
 #ifndef GIMBAL_BOARD_M_GIMBAL_H
 #define GIMBAL_BOARD_M_GIMBAL_H
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+
+#include "pid.h"
+
+#ifdef __cplusplus
+}
+#endif
+
+#include "IMU_data.h"
 #include "motor_3508.h"
 #include "struct_typedef.h"
-#include "pid.h"
 #include "first_order_filter.h"
 #include "motor_6020.h"
 #include "remote_control.h"
@@ -17,8 +27,8 @@
 #include "Communication_task.h"
 #include <cmath>
 #include <math.h>
-#include "INS_task.h"
 #include "user_lib.h"
+
 
 
 //pitch speed close-loop PID params, max out and max iout
@@ -173,7 +183,7 @@ typedef enum
 
 class M_Gimbal{
 public:
-    const RC_ctrl_t *Rc;
+    remote_control Rc;                                              //底盘使用的遥控器指针
     const motor_measure *gimbal_motor_measure;
     const fp32 *gimbal_INT_angle_point;                             //获取陀螺仪角度值
     const fp32 *gimbal_INT_gyro_point;                              //获取陀螺仪角速度值
@@ -185,8 +195,10 @@ public:
     gimbal_motor_mode_e last_gimbal_motor_mode;                     //云台上次控制状态机
     gimbal_behaviour_e gimbal_behaviour = GIMBAL_ZERO_FORCE;        //云台行为模式
 
-    pid gimbal_speed_pid[2];                                        //云台电机速度pid
-    pid gimbal_angle_pid[2];                                        //云台电机角度pid
+    IMU Gimbal_imu;                                                 //陀螺仪接口
+
+    pid_type_def gimbal_speed_pid[2];                               //云台电机速度pid
+    pid_type_def gimbal_angle_pid[2];                               //云台电机角度pid
     CAN_Gimbal gimbal_can;                                          //接收云台can数据
 
     first_order_filter gimbal_cmd_slow_set_vx;                      //使用一阶低通滤波减缓设定值
@@ -233,7 +245,7 @@ public:
     void gimbal_motionless_control(fp32 *yaw, fp32 *pitch);         //无输入控制模式
 /***************************(C) GIMBAL control *******************************/
 
-    static void PID_clear(pid *gimbal_pid_clear);                   //清除pid
+    static void PID_clear(pid_type_def *gimbal_pid_clear);                   //清除pid
     static fp32 gimbal_PID_calc(gimbal_PID_t *pid, fp32 get, fp32 set, fp32 error_delta);
     static void gimbal_PID_init(gimbal_PID_t *pid, fp32 maxout, fp32 max_iout, fp32 kp, fp32 ki, fp32 kd);
     static fp32 motor_ecd_to_angle_change(uint16_t ecd, uint16_t offset_ecd);

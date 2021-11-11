@@ -128,7 +128,13 @@
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/Communication_task.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/INS_task.cpp">
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/IMU_data.cpp">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/IMU_data.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/INS_task.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/Application/INS_task.h">
@@ -620,6 +626,12 @@
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/BMI088reg.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/MahonyAHRS.c">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/MahonyAHRS.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/components/devices/ist8310driver.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
@@ -704,12 +716,6 @@
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_laser.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_rc.c">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_rc.h">
-			<Option target="Gimbal_Board.elf"/>
-		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/hardware/bsp_servo_pwm.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
@@ -779,7 +785,7 @@
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/motor_measure.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/pid.cpp">
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/pid.c">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/pid.h">
@@ -789,6 +795,12 @@
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/remote_control.h">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/remote_data.c">
+			<Option target="Gimbal_Board.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/remote_data.h">
 			<Option target="Gimbal_Board.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/worker/CLionProjects/Gimbal_Board/module/struct_typedef.h">

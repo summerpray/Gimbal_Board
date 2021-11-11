@@ -34,7 +34,7 @@ public:
     const motor_measure *gimbal_motor_measure;
     gimbal_PID_t gimbal_motor_absolute_angle_pid;
     gimbal_PID_t gimbal_motor_relative_angle_pid;
-    pid gimbal_motor_gyro_pid;
+    pid_type_def gimbal_motor_gyro_pid;
     uint16_t offset_ecd;
     fp32 max_relative_angle; //rad
     fp32 min_relative_angle; //rad

@@ -1,28 +1,38 @@
-//
-// Created by WSJ on 2021/11/2.
-//
+/**
+  ****************************(C) COPYRIGHT 2016 DJI****************************
+  * @file       pid.c/h
+  * @brief      pidÊµÏÖº¯Êı£¬°üÀ¨³õÊ¼»¯£¬PID¼ÆËãº¯Êı£¬
+  * @note       
+  * @history
+  *  Version    Date            Author          Modification
+  *  V1.0.0     Dec-26-2018     RM              1. Íê³É
+  *
+  @verbatim
+  ==============================================================================
 
-#ifndef CLASSIS_BOARD_PID_H
-#define CLASSIS_BOARD_PID_H
-
-#ifdef __cplusplus
-
+  ==============================================================================
+  @endverbatim
+  ****************************(C) COPYRIGHT 2016 DJI****************************
+  */
+#ifndef PID_H
+#define PID_H
 #include "struct_typedef.h"
-enum PID_MODE {
+enum PID_MODE
+{
     PID_POSITION = 0,
     PID_DELTA
 };
 
-class pid {
-public:
+typedef struct
+{
     uint8_t mode;
-    //PID ä¸‰å‚æ•°
+    //PID Èı²ÎÊı
     fp32 Kp;
     fp32 Ki;
     fp32 Kd;
 
-    fp32 max_out;  //æœ€å¤§è¾“å‡º
-    fp32 max_iout; //æœ€å¤§ç§¯åˆ†è¾“å‡º
+    fp32 max_out;  //×î´óÊä³ö
+    fp32 max_iout; //×î´ó»ı·ÖÊä³ö
 
     fp32 set;
     fp32 fdb;
@@ -31,12 +41,58 @@ public:
     fp32 Pout;
     fp32 Iout;
     fp32 Dout;
-    fp32 Dbuf[3];  //å¾®åˆ†é¡¹ 0æœ€æ–° 1ä¸Šä¸€æ¬¡ 2ä¸Šä¸Šæ¬¡
-    fp32 error[3]; //è¯¯å·®é¡¹ 0æœ€æ–° 1ä¸Šä¸€æ¬¡ 2ä¸Šä¸Šæ¬¡
+    fp32 Dbuf[3];  //Î¢·ÖÏî 0×îĞÂ 1ÉÏÒ»´Î 2ÉÏÉÏ´Î
+    fp32 error[3]; //Îó²îÏî 0×îĞÂ 1ÉÏÒ»´Î 2ÉÏÉÏ´Î
 
-    void PID_init(uint8_t mode, const fp32 *PID, fp32 max_out, fp32 max_iout);
-    fp32 PID_calc( fp32 ref, fp32 set);
-};
+} pid_type_def;
+/**
+  * @brief          pid struct data init
+  * @param[out]     pid: PID struct data point
+  * @param[in]      mode: PID_POSITION: normal pid
+  *                 PID_DELTA: delta pid
+  * @param[in]      PID: 0: kp, 1: ki, 2:kd
+  * @param[in]      max_out: pid max out
+  * @param[in]      max_iout: pid max iout
+  * @retval         none
+  */
+/**
+  * @brief          pid struct data init
+  * @param[out]     pid: PID½á¹¹Êı¾İÖ¸Õë
+  * @param[in]      mode: PID_POSITION:ÆÕÍ¨PID
+  *                 PID_DELTA: ²î·ÖPID
+  * @param[in]      PID: 0: kp, 1: ki, 2:kd
+  * @param[in]      max_out: pid×î´óÊä³ö
+  * @param[in]      max_iout: pid×î´ó»ı·ÖÊä³ö
+  * @retval         none
+  */
+extern void PID_init(pid_type_def *pid, uint8_t mode, const fp32 PID[3], fp32 max_out, fp32 max_iout);
+
+/**
+  * @brief          pid calculate 
+  * @param[out]     pid: PID struct data point
+  * @param[in]      ref: feedback data 
+  * @param[in]      set: set point
+  * @retval         pid out
+  */
+/**
+  * @brief          pid¼ÆËã
+  * @param[out]     pid: PID½á¹¹Êı¾İÖ¸Õë
+  * @param[in]      ref: ·´À¡Êı¾İ
+  * @param[in]      set: Éè¶¨Öµ
+  * @retval         pidÊä³ö
+  */
+extern fp32 PID_calc(pid_type_def *pid, fp32 ref, fp32 set);
+
+/**
+  * @brief          pid out clear
+  * @param[out]     pid: PID struct data point
+  * @retval         none
+  */
+/**
+  * @brief          pid Êä³öÇå³ı
+  * @param[out]     pid: PID½á¹¹Êı¾İÖ¸Õë
+  * @retval         none
+  */
+extern void PID_clear(pid_type_def *pid);
 
 #endif
-#endif //CLASSIS_BOARD_PID_H
