@@ -24,6 +24,8 @@
 #include "cmsis_os.h"
 #include "System_Config.h"
 #include "INS_task.h"
+#include "remote_data.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -126,8 +128,8 @@ void MX_FREERTOS_Init(void) {
   osThreadDef(startTask, start_task, osPriorityNormal, 0, 128);
   startTaskHandle = osThreadCreate(osThread(startTask), NULL);
 
-  osThreadDef(imuTask, INS_task, osPriorityRealtime, 0, 1024);
-  imuTaskHandle = osThreadCreate(osThread(imuTask), NULL);
+//  osThreadDef(imuTask, INS_task, osPriorityRealtime, 0, 1024);
+//  imuTaskHandle = osThreadCreate(osThread(imuTask), NULL);
 
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -149,11 +151,11 @@ void MX_FREERTOS_Init(void) {
 __weak void start_task(void const * argument)
 {
     /* init code for USB_DEVICE */
-
+    Task_init();
     /* USER CODE BEGIN test_task */
     /* Infinite loop */
     while(1) {
-        Task_init();
+
         Task_start();
         /* Delete the default task. */
         osThreadTerminate(startTaskHandle);

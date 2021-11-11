@@ -33,7 +33,7 @@
 #include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
-
+#include "remote_control.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -195,7 +195,11 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void Task_init() {
+    /* Syetem Service init --------------*/
+    remote_control_init();
+    /* Applications Init ----------------*/
+}
 /* USER CODE END 4 */
 
 /**

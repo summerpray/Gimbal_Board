@@ -30,10 +30,10 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal.h"
-
+#include "remote_control.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+void Task_init();
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

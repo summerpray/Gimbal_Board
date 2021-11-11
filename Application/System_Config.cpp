@@ -2,13 +2,12 @@
 // Created by WSJ on 2021/11/2.
 //
 
-#ifdef __cplusplus
-extern "C"{
-#endif
-#include "remote_data.h"
-#ifdef __cplusplus
-}
-#endif
+//#ifdef __cplusplus
+//extern "C"{
+//#endif
+//#ifdef __cplusplus
+//}
+//#endif
 
 #include "System_Config.h"
 #include "gimbal_task.h"
@@ -36,12 +35,6 @@ TaskHandle_t Gimbal_Task_Handle;
 
 
 
-void Task_init() {
-    /* Syetem Service init --------------*/
-    remote_control_init();
-    /* Applications Init ----------------*/
-}
-
 /**
 * @brief Load and start User Tasks.
 * @note  Edit this function to add tasks into the activated tasks list.
@@ -49,5 +42,5 @@ void Task_init() {
 void Task_start(void) {
     /* Syetem Service init --------------*/
     /* Applications Init ----------------*/
-    xTaskCreate(gimbal_task, "gimbal_task", Normal_Stack_Size, NULL, PriorityAboveNormal, &Gimbal_Task_Handle);
+    xTaskCreate(gimbal_task, "gimbal_task", Normal_Stack_Size, nullptr, PriorityAboveNormal, &Gimbal_Task_Handle);
 }
