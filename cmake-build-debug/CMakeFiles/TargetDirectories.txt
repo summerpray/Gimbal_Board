@@ -1,0 +1,3 @@
+C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/Gimbal_Board.elf.dir
+C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/worker/CLionProjects/Gimbal_Board/cmake-build-debug/CMakeFiles/rebuild_cache.dir
