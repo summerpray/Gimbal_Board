@@ -38,7 +38,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -50,15 +49,19 @@
 /* USER CODE BEGIN Variables */
 osThreadId startTaskHandle;
 osThreadId imuTaskHandle;
+
+//TaskHandle_t IMU_Task_Handle;
+osThreadId testHandle;
 /* USER CODE END Variables */
 
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
+void test_task(void const *argument);
+void start_task(void const * argument);
 
 /* USER CODE END FunctionPrototypes */
 
-void start_task(void const * argument);
 
 extern void MX_USB_DEVICE_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -128,8 +131,8 @@ void MX_FREERTOS_Init(void) {
   osThreadDef(startTask, start_task, osPriorityNormal, 0, 128);
   startTaskHandle = osThreadCreate(osThread(startTask), NULL);
 
-//  osThreadDef(imuTask, INS_task, osPriorityRealtime, 0, 1024);
-//  imuTaskHandle = osThreadCreate(osThread(imuTask), NULL);
+  osThreadDef(imuTask, INS_task, osPriorityRealtime, 0, 1024);
+  imuTaskHandle = osThreadCreate(osThread(imuTask), NULL);
 
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */
@@ -143,6 +146,25 @@ void MX_FREERTOS_Init(void) {
 
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
+/* USER CODE BEGIN Header_test_task */
+/**
+  * @brief  Function implementing the test thread.
+  * @param  argument: Not used
+  * @retval None
+  */
+/* USER CODE END Header_test_task */
+__weak void test_task(void const *argument) {
+    /* init code for USB_DEVICE */
+    MX_USB_DEVICE_Init();
+
+    /* USER CODE BEGIN test_task */
+    /* Infinite loop */
+    for (;;) {
+        osDelay(1);
+    }
+    /* USER CODE END test_task */
+}
+
 /**
   * @brief  Function implementing the test thread.
   * @param  argument: Not used
@@ -152,14 +174,13 @@ __weak void start_task(void const * argument)
 {
     /* init code for USB_DEVICE */
     Task_init();
+    Task_start();
     /* USER CODE BEGIN test_task */
     /* Infinite loop */
-    while(1) {
 
-        Task_start();
-        /* Delete the default task. */
-        osThreadTerminate(startTaskHandle);
-    }
+    /* Delete the default task. */
+
+    osThreadTerminate(startTaskHandle);
     /* USER CODE END test_task */
 }
 /* USER CODE END Application */

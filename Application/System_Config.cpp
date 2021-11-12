@@ -10,10 +10,9 @@
 //#endif
 
 #include "System_Config.h"
+#include "cmsis_os.h"
 #include "gimbal_task.h"
 #include "task.h"
-
-#include "remote_control.h"
 
 
 extern remote_control RC;

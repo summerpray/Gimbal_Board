@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/Application/INS_task.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/System_Config.cpp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Application/System_Config.h" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cmsis-dap.cfg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hardware" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hardware/bsp_adc.c" charset="GBK" />

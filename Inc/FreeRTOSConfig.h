@@ -30,6 +30,8 @@
 #ifndef FREERTOS_CONFIG_H
 #define FREERTOS_CONFIG_H
 
+#define xPortPendSVHandler 	PendSV_Handler
+#define vPortSVCHandler 	SVC_Handler
 /*-----------------------------------------------------------
  * Application specific definitions.
  *

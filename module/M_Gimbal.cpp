@@ -57,8 +57,8 @@ void M_Gimbal::init() {
     gimbal_pitch_motor.gimbal_motor_measure = gimbal_can.get_gimbal_motor_measure_point(PITCH);
 
     //TODO: 在INS初始化移植完毕后取消注释这里
-    gimbal_INT_angle_point = Gimbal_imu.INS_gyro;
-    gimbal_INT_gyro_point = Gimbal_imu.INS_gyro;
+    gimbal_INT_angle_point = get_INS_angle_point();
+    gimbal_INT_gyro_point = get_gyro_data_point();
 
     //遥控器数据指针获取
     Rc.data = &rc_ctrl;

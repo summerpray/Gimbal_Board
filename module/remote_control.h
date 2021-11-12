@@ -5,6 +5,8 @@
 #ifndef CLASSIS_BOARD_REMOTE_CONTROL_H
 #define CLASSIS_BOARD_REMOTE_CONTROL_H
 #ifdef __cplusplus
+extern "C"{
+#endif
 
 #include <cstdint>
 #include "remote_data.h"
@@ -67,5 +69,7 @@ public:
 
 };
 
+#ifdef __cplusplus
+}
 #endif
 #endif //CLASSIS_BOARD_REMOTE_CONTROL_H

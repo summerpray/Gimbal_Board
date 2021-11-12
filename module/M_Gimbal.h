@@ -195,7 +195,7 @@ public:
     gimbal_motor_mode_e last_gimbal_motor_mode;                     //云台上次控制状态机
     gimbal_behaviour_e gimbal_behaviour = GIMBAL_ZERO_FORCE;        //云台行为模式
 
-    IMU Gimbal_imu;                                                 //陀螺仪接口
+    //IMU Gimbal_imu;                                                 //陀螺仪接口
 
     pid_type_def gimbal_speed_pid[2];                               //云台电机速度pid
     pid_type_def gimbal_angle_pid[2];                               //云台电机角度pid
